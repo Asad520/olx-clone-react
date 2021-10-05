@@ -4,25 +4,23 @@ import { Col } from 'react-bootstrap';
 
 export default function headerButtons() {
   return (
-    <>
-      <Col className='header-buttons' lg={3}>
-        <section className='login'>
-          <button
-            className='login-btn'
-            type='button'
-            data-bs-toggle='modal'
-            data-bs-target='#login-modal'
-          >
-            Login
-          </button>
-        </section>
+    <Col className='header-buttons' lg={3}>
+      <section className='login'>
+        <button
+          className='login-btn'
+          type='button'
+          data-bs-toggle='modal'
+          data-bs-target='#login-modal'
+        >
+          Login
+        </button>
+      </section>
 
-        <section className='sell-btn'>
-          <a href='#'>
-            <img src={SELL_IMAGE} alt='Sell Text' className='sell-img' />
-          </a>
-        </section>
-      </Col>
-    </>
+      <section className='sell-btn'>
+        <a href='#'>
+          <img src={SELL_IMAGE} alt='Sell Text' className='sell-img' />
+        </a>
+      </section>
+    </Col>
   );
 }

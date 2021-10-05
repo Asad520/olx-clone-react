@@ -1,7 +1,7 @@
 const OLX_LOGO =
   'https://www.olx.com.pk/assets/logo_noinline.1cdf230e49c0530ad4b8d43e37ecc4a4.svg';
 
-const LOCATION_SEARCH_ARROW =
+const DOWN_ARROW =
   'https://www.olx.com.pk/assets/iconArrowDown_noinline.ec05eae7013321c193965ef15d4e2174.svg';
 
 const CURRENT_LOCATION_ICON =
@@ -13,25 +13,16 @@ const SEARCH_SVG =
 const LOCATION_MARKER_ICON =
   'https://www.olx.com.pk/assets/iconLocation_noinline.dd275c9d8c1ed5d1f8c45bd6859ca4df.svg';
 
-const SEARCH_LOCATIONS = [
-  { location: 'Azad Kashmir, Pakistan', id: '1' },
-  { location: 'Balochistan, Pakistan', id: '2' },
-  { location: 'Azad Kashmir, Pakistan', id: '3' },
-  { location: 'Islamabad Capital Territory, Pakistan', id: '4' },
-  { location: 'Khyber PakhtunKhwa, Pakistan', id: '5' },
-  { location: 'Northern Areas, Pakistan', id: '6' },
-  { location: 'Punjab, Pakistan', id: '7' },
-  { location: 'Sindh, Pakistan', id: '8' },
-];
-
 const SELL_IMAGE = '../assets/images/sell.png';
+
+const MAIN_CATEGORY = 'MAIN_CATEGORY';
 
 export {
   OLX_LOGO,
-  LOCATION_SEARCH_ARROW,
+  DOWN_ARROW,
   CURRENT_LOCATION_ICON,
   SEARCH_SVG,
   LOCATION_MARKER_ICON,
-  SEARCH_LOCATIONS,
   SELL_IMAGE,
+  MAIN_CATEGORY,
 };

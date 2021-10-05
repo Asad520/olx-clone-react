@@ -1,4 +1,4 @@
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container } from 'react-bootstrap';
 import Brand from './components/brand';
 import LocationSearch from './components/locationSearch';
 import ItemSearch from './components/itemSearch';
