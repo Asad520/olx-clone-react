@@ -13,12 +13,13 @@ import {
   PLAYSTORE_ICON,
 } from '../../utils/constants';
 import '../../assets/css/footer-styles.css';
+import { Col } from 'react-bootstrap';
 
 export default function footer() {
   const renderFooterCategories = (data) => {
     return data.map((category) => {
       return (
-        <a key={category.id} href='#' class='footer-category'>
+        <a key={category.id} href='#' className='footer-category'>
           {category.name}
         </a>
       );
@@ -28,29 +29,29 @@ export default function footer() {
   return (
     <>
       <footer>
-        <section class='footer-section'>
-          <div class='container footer-container'>
-            <div class='footer-categories col-lg-2'>
-              <span class='footer-heading'>POPULAR CATEGORIES</span>
+        <section className='footer-section'>
+          <div className='container footer-container'>
+            <Col className='footer-categories ' lg={2}>
+              <span className='footer-heading'>POPULAR CATEGORIES</span>
               {renderFooterCategories(POPULAR_CATEGORIES)}
-            </div>
-            <div class='footer-categories col-lg-2'>
-              <span class='footer-heading'>TRENDING SEARCHES</span>
+            </Col>
+            <Col className='footer-categories' lg={2}>
+              <span className='footer-heading'>TRENDING SEARCHES</span>
               {renderFooterCategories(TRENDING_SEARCHES)}
-            </div>
-            <div class='footer-categories col-lg-2'>
-              <span class='footer-heading'>ABOUT US</span>
+            </Col>
+            <Col className='footer-categories' lg={2}>
+              <span className='footer-heading'>ABOUT US</span>
               {renderFooterCategories(ABOUT_US)}
-            </div>
-            <div class='footer-categories col-lg-2'>
-              <span class='footer-heading'>OLX</span>
+            </Col>
+            <Col className='footer-categories' lg={2}>
+              <span className='footer-heading'>OLX</span>
               {renderFooterCategories(OLX_INFO)}
-            </div>
-            <div class='col ms-2'>
-              <span class='footer-heading'>FOLLOW US</span>
-              <div class='social-media-container'>
-                <div class='d-flex justify-content-between w-120'>
-                  <a href='#' class='footer-category'>
+            </Col>
+            <div className='col ms-2'>
+              <span className='footer-heading'>FOLLOW US</span>
+              <div className='social-media-container'>
+                <div className='d-flex justify-content-between w-120'>
+                  <a href='#' className='footer-category'>
                     <img
                       src={FACEBOOK_ICON}
                       alt='Facebook logo'
@@ -58,7 +59,7 @@ export default function footer() {
                       height='24'
                     />
                   </a>
-                  <a href='#' class='footer-category'>
+                  <a href='#' className='footer-category'>
                     <img
                       src={TWITTER_ICON}
                       alt='Twitter logo'
@@ -66,7 +67,7 @@ export default function footer() {
                       height='24'
                     />
                   </a>
-                  <a href='#' class='footer-category'>
+                  <a href='#' className='footer-category'>
                     <img
                       src={YOUTUBE_ICON}
                       alt='Youtube logo'
@@ -74,7 +75,7 @@ export default function footer() {
                       height='24'
                     />
                   </a>
-                  <a href='#' class='footer-category'>
+                  <a href='#' className='footer-category'>
                     <img
                       src={INSTAGRAM_ICON}
                       alt='Instagram logo'
@@ -83,7 +84,7 @@ export default function footer() {
                     />
                   </a>
                 </div>
-                <div class='store-container'>
+                <div className='store-container'>
                   <a href=''>
                     <img
                       src={APPSTORE_ICON}
@@ -106,10 +107,10 @@ export default function footer() {
           </div>
         </section>
 
-        <div class='copyright-container'>
-          <div class='copyright-text'>
-            <span class='footer-copyright'>
-              Free Classifieds in Pakistan &nbsp; &nbsp;
+        <div className='copyright-container'>
+          <div className='copyright-text'>
+            <span className='footer-copyright'>
+              Free classNameifieds in Pakistan &nbsp; &nbsp;
             </span>
             <span>. © 2006-2021 OLX</span>
           </div>
