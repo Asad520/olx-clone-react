@@ -14,8 +14,10 @@ export default function main() {
   };
 
   return (
-    <Container>
-      <Row>{renderCard(POSTS)}</Row>
-    </Container>
+    <section className='posts'>
+      <Container>
+        <Row>{renderCard(POSTS)}</Row>
+      </Container>
+    </section>
   );
 }
