@@ -1,13 +1,11 @@
 import '../../assets/css/banner-styles.css';
+import { BANNER_IMG } from '../../utils/constants';
 
 export default function banner() {
   return (
     <>
       <section class='banner-img'>
-        <img
-          src='https://www.olx.com.pk/assets/wallpaper.6416002a042322099dbfec286d7574f4.jpg'
-          class='banner'
-        />
+        <img src={BANNER_IMG} alt='OLX Banner' class='banner' />
       </section>
     </>
   );

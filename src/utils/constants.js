@@ -17,6 +17,11 @@ const SELL_IMAGE = '../assets/images/sell.png';
 
 const MAIN_CATEGORY = 'MAIN_CATEGORY';
 
+const BANNER_IMG =
+  'https://www.olx.com.pk/assets/wallpaper.6416002a042322099dbfec286d7574f4.jpg';
+const BOTTOM_BANNER_IMG =
+  'https://www.olx.com.pk/assets/olxMobileApp.f5579f77e849b600ad60857e46165516.webp';
+
 const FACEBOOK_ICON =
   'https://www.olx.com.pk/assets/iconFacebook_noinline.773db88c5b9ee5aaab365e61cdb750da.svg';
 const TWITTER_ICON =
@@ -44,4 +49,6 @@ export {
   INSTAGRAM_ICON,
   APPSTORE_ICON,
   PLAYSTORE_ICON,
+  BANNER_IMG,
+  BOTTOM_BANNER_IMG,
 };

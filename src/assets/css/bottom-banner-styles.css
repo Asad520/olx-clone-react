@@ -1,0 +1,62 @@
+.bottom-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(0, 47, 52, 0.03);
+  margin-top: 100px;
+}
+
+.bottom-banner-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.bottom-banner-descr {
+  margin-left: 20px;
+  padding: 0px 25px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bottom-banner-heading {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.bottom-banner-text {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.banner-social-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1% 0% 1% 0%;
+  padding-left: 2%;
+  border-left: 2px solid rgba(0, 47, 52, 0.2);
+}
+
+.banner-appstore-img {
+  width: 40%;
+}
+
+.banner-playstore-img {
+  width: 40%;
+  margin-left: 5%;
+}
+
+.get-app-text {
+  margin-top: 12%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.banner-social-images {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+}
