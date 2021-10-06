@@ -26,4 +26,39 @@ const ALL_CATEGORIES = [
   { name: 'Action', id: '4' },
 ];
 
-export { SEARCH_LOCATIONS, MAIN_CATEGORIES, ALL_CATEGORIES };
+const POPULAR_CATEGORIES = [
+  { name: 'Cars', id: '1' },
+  { name: 'Flats for rent', id: '2' },
+  { name: 'Mobile Phones', id: '3' },
+  { name: 'Jobs', id: '4' },
+];
+
+const TRENDING_SEARCHES = [
+  { name: 'Bikes', id: '1' },
+  { name: 'Watches', id: '2' },
+  { name: 'Books', id: '3' },
+  { name: 'Dogs', id: '4' },
+];
+
+const ABOUT_US = [
+  { name: 'About EMPG', id: '1' },
+  { name: 'OLX Blog', id: '2' },
+  { name: 'Contact Us', id: '3' },
+  { name: 'OLX for businesses', id: '4' },
+];
+
+const OLX_INFO = [
+  { name: 'Help', id: '1' },
+  { name: 'Sitemap', id: '2' },
+  { name: 'Legacy and Privacy information', id: '3' },
+];
+
+export {
+  SEARCH_LOCATIONS,
+  MAIN_CATEGORIES,
+  ALL_CATEGORIES,
+  POPULAR_CATEGORIES,
+  TRENDING_SEARCHES,
+  ABOUT_US,
+  OLX_INFO,
+};

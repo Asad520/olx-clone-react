@@ -17,6 +17,19 @@ const SELL_IMAGE = '../assets/images/sell.png';
 
 const MAIN_CATEGORY = 'MAIN_CATEGORY';
 
+const FACEBOOK_ICON =
+  'https://www.olx.com.pk/assets/iconFacebook_noinline.773db88c5b9ee5aaab365e61cdb750da.svg';
+const TWITTER_ICON =
+  'https://www.olx.com.pk/assets/iconTwitter_noinline.6037fa7d9a7b9d6408fb1b3d70524b97.svg';
+const YOUTUBE_ICON =
+  'https://www.olx.com.pk/assets/iconYoutube_noinline.c85bd6801ec83d6a3b498059550bef26.svg';
+const INSTAGRAM_ICON =
+  'https://www.olx.com.pk/assets/iconInstagram_noinline.d7d5811ebc44e03a674c8d0b5ff3f232.svg';
+const APPSTORE_ICON =
+  'https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg';
+const PLAYSTORE_ICON =
+  'https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg';
+
 export {
   OLX_LOGO,
   DOWN_ARROW,
@@ -25,4 +38,10 @@ export {
   LOCATION_MARKER_ICON,
   SELL_IMAGE,
   MAIN_CATEGORY,
+  FACEBOOK_ICON,
+  TWITTER_ICON,
+  YOUTUBE_ICON,
+  INSTAGRAM_ICON,
+  APPSTORE_ICON,
+  PLAYSTORE_ICON,
 };
