@@ -109,7 +109,7 @@ export default function footer() {
       <div className='copyright-container'>
         <div className='copyright-text'>
           <span className='footer-copyright'>
-            Free classNameifieds in Pakistan &nbsp; &nbsp;
+            Free classifieds in Pakistan &nbsp; &nbsp;
           </span>
           <span>. © 2006-2021 OLX</span>
         </div>

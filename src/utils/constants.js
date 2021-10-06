@@ -34,6 +34,8 @@ const APPSTORE_ICON =
   'https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg';
 const PLAYSTORE_ICON =
   'https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg';
+const FAVOURITES_ICON =
+  'https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg';
 
 export {
   OLX_LOGO,
@@ -51,4 +53,5 @@ export {
   PLAYSTORE_ICON,
   BANNER_IMG,
   BOTTOM_BANNER_IMG,
+  FAVOURITES_ICON,
 };

@@ -1,0 +1,127 @@
+.card {
+  margin-top: 5%;
+}
+
+.card-container {
+  border: 0.1rem solid rgba(0, 47, 52, 0.2);
+  padding: 10px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.card-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 158px;
+  margin-bottom: 10px;
+}
+
+.heart-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 12px;
+}
+
+.price-text {
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+}
+
+.card-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-text {
+  height: 100px;
+}
+
+.add-desc {
+  color: #61797d;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.location-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.location-text {
+  color: #61797d;
+  font-size: 10px;
+}
+
+.card-text-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+
+.featured-card-bottom {
+  border-left: 0.4rem solid #ffce32;
+  border-bottom-left-radius: 1px;
+  margin-left: -13px;
+  padding-left: 10px;
+}
+
+.featured {
+  position: absolute;
+  background-color: #ffce32;
+  display: flex;
+  align-items: center;
+  padding: 5px 12px 5px 12px;
+}
+
+.featured-text {
+  font-weight: 700;
+  font-size: 10px;
+  color: #002f34;
+}
+
+.sell-container {
+  background-color: #3a77ff;
+  border: 0.1rem solid rgba(0, 47, 52, 0.2);
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sell-text {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sell-heading {
+  overflow: hidden;
+  font-weight: 700;
+  color: #fff;
+}
+
+.sell-descr {
+  overflow: hidden;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.card-link {
+  text-decoration: none;
+}

@@ -53,6 +53,81 @@ const OLX_INFO = [
   { name: 'Legacy and Privacy information', id: '3' },
 ];
 
+const POSTS = [
+  {
+    img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
+    price: '110,000',
+    descr: 'Husky puppies',
+    location: 'BAHRIA TOWN, LAHORE',
+    timeStamp: '1 WEEK AGO',
+    featured: false,
+    id: '1',
+  },
+  {
+    img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
+    price: '110,000',
+    descr: 'Husky puppies',
+    location: 'BAHRIA TOWN, LAHORE',
+    timeStamp: '1 WEEK AGO',
+    featured: false,
+    id: '2',
+  },
+  {
+    img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
+    price: '110,000',
+    descr: 'Husky puppies',
+    location: 'BAHRIA TOWN, LAHORE',
+    timeStamp: '1 WEEK AGO',
+    featured: true,
+    id: '3',
+  },
+  {
+    img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
+    price: '110,000',
+    descr: 'Husky puppies',
+    location: 'BAHRIA TOWN, LAHORE',
+    timeStamp: '1 WEEK AGO',
+    featured: false,
+    id: '4',
+  },
+  {
+    img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
+    price: '110,000',
+    descr: 'Husky puppies',
+    location: 'BAHRIA TOWN, LAHORE',
+    timeStamp: '1 WEEK AGO',
+    featured: true,
+    id: '5',
+  },
+  {
+    img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
+    price: '110,000',
+    descr: 'Husky puppies',
+    location: 'BAHRIA TOWN, LAHORE',
+    timeStamp: '1 WEEK AGO',
+    featured: false,
+    id: '6',
+  },
+  {
+    img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
+    price: '110,000',
+    descr: 'Husky puppies',
+    location: 'BAHRIA TOWN, LAHORE',
+    timeStamp: '1 WEEK AGO',
+    featured: false,
+    id: '7',
+  },
+  {
+    img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
+    price: '110,000',
+    descr: 'Husky puppies',
+    location: 'BAHRIA TOWN, LAHORE',
+    timeStamp: '1 WEEK AGO',
+    featured: true,
+    id: '8',
+  },
+];
+
 export {
   SEARCH_LOCATIONS,
   MAIN_CATEGORIES,
@@ -61,4 +136,5 @@ export {
   TRENDING_SEARCHES,
   ABOUT_US,
   OLX_INFO,
+  POSTS,
 };

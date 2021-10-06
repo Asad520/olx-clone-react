@@ -1,9 +1,9 @@
-import '../../assets/css/bottom-banner-styles.css';
+import '../../../../assets/css/bottom-banner-styles.css';
 import {
   BOTTOM_BANNER_IMG,
   APPSTORE_ICON,
   PLAYSTORE_ICON,
-} from '../../utils/constants';
+} from '../../../../utils/constants';
 
 export default function bottomBanner() {
   return (
