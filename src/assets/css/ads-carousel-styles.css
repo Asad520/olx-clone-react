@@ -1,0 +1,12 @@
+.product-details-container {
+  border: 1px solid rgba(0, 47, 52, 0.36);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.carousel-cards {
+  display: flex;
+  justify-content: center;
+}

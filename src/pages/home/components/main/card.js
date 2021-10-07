@@ -2,7 +2,7 @@ import { FAVOURITES_ICON } from '../../../../utils/constants';
 import '../../../../assets/css/home-card-styles.css';
 
 export default function card({ post }) {
-  const { featured } = post;
+  const { featured, img, descr, price, location, timeStamp } = post;
   return (
     <div className='card'>
       <a href='/pages/product.html' className='card-link'>
@@ -18,7 +18,7 @@ export default function card({ post }) {
               alt='Husky puppies'
               title='Husky puppies'
               aria-label='Cover photo'
-              data-src={post.img}
+              data-src={img}
               className='card-img lazy loaded'
               src={post.img}
             />
@@ -34,12 +34,12 @@ export default function card({ post }) {
             }
           >
             <div className='card-text-container'>
-              <span className='price-text'> RS {post.price} </span>
-              <p className='add-desc'>Husky puppies</p>
+              <span className='price-text'> RS {price} </span>
+              <p className='add-desc'>{descr}</p>
             </div>
             <div className='location-container'>
-              <span className='location-text'> {post.location}</span>
-              <span className='location-text'>{post.timeStamp}</span>
+              <span className='location-text'> {location}</span>
+              <span className='location-text'>{timeStamp}</span>
             </div>
           </div>
         </div>

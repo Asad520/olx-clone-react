@@ -1,0 +1,66 @@
+.carousel-card-container {
+  border: 0.1rem solid rgba(0, 47, 52, 0.2);
+  height: 100%;
+  width: 13rem;
+  position: relative;
+  padding: 8px 12px 0px 12px;
+  margin-right: 10px;
+}
+
+.carousel-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-card-img {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.carousel-heart-icon {
+  width: 24px;
+  height: 24px;
+  top: 5px;
+  right: 5px;
+  position: absolute;
+}
+
+.carousel-price-text {
+  font-weight: 700;
+  font-size: 17px;
+  color: black;
+}
+
+.carousel-text-container {
+  margin-top: 10px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.carousel-add-text {
+  height: 100px;
+}
+
+.carousel-add-desc {
+  color: #61797d;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.carousel-location-container {
+  margin-bottom: 5px;
+  margin-left: -5px;
+  position: relative;
+}
+
+.carousel-location-text {
+  color: #61797d;
+  font-size: 10px;
+}
+
+.carousel-card-href {
+  text-decoration: none;
+}

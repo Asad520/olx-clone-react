@@ -6,8 +6,10 @@ import ImagesContainer from './components/imagesContainer/imagesContainer';
 import PriceContainer from './components/priceContainer/priceContainer';
 import SellerDescription from './components/sellerDescription/sellerDescription';
 import ProductDetails from './components/productDetails/productDetails';
+import SellerLocation from './components/sellerLocation/sellerLocation';
 import { PRODUCT_BREADCRUMBS, POSTS } from '../../utils/data';
 import { Col, Container, Row } from 'react-bootstrap';
+import AdsCarousel from './components/adsCarousel/adsCarousel';
 
 export default function Product({ product }) {
   const { productImages, featured, seller } = POSTS[0];
@@ -24,11 +26,13 @@ export default function Product({ product }) {
               featured={featured}
             />
             <ProductDetails />
+            <AdsCarousel posts={POSTS} />
           </Col>
 
           <Col md={4}>
             <PriceContainer product={POSTS[0]} />
             <SellerDescription seller={seller} />
+            <SellerLocation />
           </Col>
         </Row>
       </Container>
