@@ -4,7 +4,7 @@ import CategoriesContainer from './components/allCategoriesContainer';
 import { ALL_CATEGORIES, MAIN_CATEGORIES } from '../../utils/data';
 import { MAIN_CATEGORY, DOWN_ARROW } from '../../utils/constants';
 
-export default function categoriesBar() {
+export default function CategoriesBar() {
   const renderCategories = (type) => {
     const categories =
       type === MAIN_CATEGORY ? MAIN_CATEGORIES : ALL_CATEGORIES;

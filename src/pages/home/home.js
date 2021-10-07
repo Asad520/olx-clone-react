@@ -5,7 +5,7 @@ import Footer from '../../components/footer/footer';
 import BottomBanner from './components/bottomBanner/bottomBanner';
 import Main from './components/main/main';
 
-export default function home() {
+export default function Home() {
   return (
     <>
       <Header />

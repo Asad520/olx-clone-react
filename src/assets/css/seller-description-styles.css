@@ -1,0 +1,60 @@
+.product-info-container {
+  border: 1px solid rgba(0, 47, 52, 0.36);
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.seller-info-text {
+  font-size: 20px;
+  color: #002f34;
+}
+
+.seller-profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #002f34;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.member-since-text {
+  font-size: 14px;
+  color: rgba(0, 47, 52, 0.64);
+}
+
+.chat-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #002f34;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.seller-number {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #002f34;
+  font-size: 14px;
+}
+
+.show-number-text {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #3a77ff;
+  cursor: pointer;
+}

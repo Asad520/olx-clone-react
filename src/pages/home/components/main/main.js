@@ -3,7 +3,7 @@ import { POSTS } from '../../../../utils/data';
 import Card from './card';
 
 export default function main() {
-  const renderCard = (posts) => {
+  const renderCards = (posts) => {
     return posts.map((post) => {
       return (
         <Col md={3}>
@@ -16,7 +16,7 @@ export default function main() {
   return (
     <section className='posts'>
       <Container>
-        <Row>{renderCard(POSTS)}</Row>
+        <Row>{renderCards(POSTS)}</Row>
       </Container>
     </section>
   );

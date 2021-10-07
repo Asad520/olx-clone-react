@@ -4,7 +4,7 @@ import LocationSearch from './components/locationSearch';
 import ItemSearch from './components/itemSearch';
 import HeaderButtons from './components/headerButtons';
 
-export default function header() {
+export default function Header() {
   return (
     <Navbar bg='light' expand='lg'>
       <Container>

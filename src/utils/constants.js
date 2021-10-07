@@ -3,6 +3,12 @@ const OLX_LOGO =
 
 const DOWN_ARROW =
   'https://www.olx.com.pk/assets/iconArrowDown_noinline.ec05eae7013321c193965ef15d4e2174.svg';
+const LEFT_ARROW =
+  'M24.34 28.65c.8.8.7 2.1-.1 2.8-.8.7-2 .7-2.7 0l-14-14c-.8-.8-.8-2 0-2.8l14-14c.8-.8 2-.8 2.8-.1.8.8.8 2 .1 2.8l-.1.1-12.6 12.5 12.6 12.7z';
+const RIGHT_ARROW =
+  'M7.55 3.36c-.8-.8-.7-2.1.1-2.8.8-.7 2-.7 2.7 0l14 14c.8.8.8 2 0 2.8l-14 14c-.8.8-2 .8-2.8.1-.8-.8-.8-2-.1-2.8l.1-.1 12.6-12.5-12.6-12.7z';
+const MEMBER_ARROW =
+  "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' class='svg-icon-sprite' viewBox='0 0 32 32'%3E%3Cpath d='M7.55 3.363c-.8-.8-.7-2.1.1-2.8.8-.7 2-.7 2.7 0l14 14c.8.8.8 2 0 2.8l-14 14c-.8.8-2 .8-2.8.1-.8-.8-.8-2-.1-2.8l.1-.1 12.6-12.5-12.6-12.7z'/%3E%3C/svg%3E";
 
 const CURRENT_LOCATION_ICON =
   'https://www.olx.com.pk/assets/iconCurrentLocation_noinline.6acc646ec0e4ecdee696b5588b92c859.svg';
@@ -36,6 +42,12 @@ const PLAYSTORE_ICON =
   'https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg';
 const FAVOURITES_ICON =
   'https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg';
+const SHARE_ICON =
+  'https://www.olx.com.pk/assets/iconShare_noinline.41d8fa8326fea7b27bc24d3eca8b598a.svg';
+const PROFILE_PIC_ICON =
+  'https://www.olx.com.pk/assets/iconProfilePicture.7975761176487dc62e25536d9a36a61d.png';
+const PHONE_ICON =
+  'M784.55 852.4c-331.43-14.64-598.31-281.52-612.94-612.95l149.97-60 91.69 183.43-71 35.5v26.45c0 141.66 115.25 256.9 256.9 256.9h26.45l11.86-23.64 23.68-47.36 183.38 91.74-59.99 149.93zM918.1 643.45L661.16 514.99l-57.47 19.2-30.04 60.03c-74.07-11.1-132.73-69.8-143.87-143.87l60.08-30.04L509 362.88 380.6 105.94l-54.2-20.6-214.18 85.63-26.88 39.8c0 401.37 326.57 727.9 727.94 727.9l39.76-26.88 85.64-214.19-20.61-54.19z';
 
 export {
   OLX_LOGO,
@@ -54,4 +66,10 @@ export {
   BANNER_IMG,
   BOTTOM_BANNER_IMG,
   FAVOURITES_ICON,
+  LEFT_ARROW,
+  RIGHT_ARROW,
+  SHARE_ICON,
+  PROFILE_PIC_ICON,
+  MEMBER_ARROW,
+  PHONE_ICON,
 };

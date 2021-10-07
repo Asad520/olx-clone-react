@@ -1,0 +1,35 @@
+.product-details-container {
+  border: 1px solid rgba(0, 47, 52, 0.36);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 47, 52, 0.2);
+  margin-bottom: 20px;
+}
+
+.product-keys {
+  padding: 25px;
+  color: rgba(0, 47, 52, 0.64);
+  font-size: 14px;
+}
+
+.product-values {
+  padding: 25px;
+  font-size: 14px;
+}
+
+.description-heading {
+  font-weight: bold;
+}
+
+.description {
+  font-size: 14px;
+  color: #002f34;
+  margin: 0;
+}

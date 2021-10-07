@@ -15,7 +15,7 @@ import {
 import '../../assets/css/footer-styles.css';
 import { Col } from 'react-bootstrap';
 
-export default function footer() {
+export default function Footer() {
   const renderFooterCategories = (data) => {
     return data.map((category) => {
       return (
