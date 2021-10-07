@@ -61,10 +61,11 @@
 .left-arrow {
   position: absolute;
   z-index: 1;
-  width: 2rem;
-  height: 2rem;
+  width: 30px;
+  height: 30px;
   background-color: rgba(0, 0, 0, 0.2);
   border: none;
+  border-radius: 50%;
   top: 48%;
   left: 1%;
 }
@@ -72,10 +73,11 @@
 .right-arrow {
   position: absolute;
   z-index: 1;
-  width: 2rem;
-  height: 2rem;
+  width: 30px;
+  height: 30px;
   background-color: rgba(0, 0, 0, 0.2);
   border: none;
+  border-radius: 50%;
   top: 48%;
   right: 1%;
 }
