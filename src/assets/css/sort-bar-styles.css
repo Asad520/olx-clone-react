@@ -1,0 +1,112 @@
+.sort-bar {
+  border-bottom: 1px solid rgba(0, 47, 52, 0.36);
+  padding-bottom: 7px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ad-count {
+  background-color: #c8f8f6;
+  padding: 0px 3px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.sort-icons {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+  border-right: 1px solid #dedede;
+}
+
+.view-text {
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 18%;
+}
+
+.active-layout-btn {
+  background-color: #c8f8f6;
+  border-radius: 100%;
+  border: none;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.layout-btn {
+  border: none;
+  background-color: white;
+}
+
+.sort-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sort {
+  color: #002f34;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+}
+
+.sort:hover {
+  color: #002f34;
+}
+
+.sort-text {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.active-sort {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.sort-arrow {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.sort-item {
+  color: #002f34;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sort-item:hover {
+  background-color: rgb(199, 255, 255);
+}
+
+.sort-tick {
+  width: 22px;
+  height: 22px;
+  fill: #002f34;
+  position: absolute;
+  left: 15px;
+}
+
+.sort-dropdown {
+  width: 200px;
+}
+
+.sort-item-text {
+  font-size: 14px;
+  color: #002f34;
+}
+
+.sort-list {
+  padding: 0;
+}

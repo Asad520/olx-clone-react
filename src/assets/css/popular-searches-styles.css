@@ -1,0 +1,32 @@
+.popular-container {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.popular-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.popular-item {
+  color: rgba(0, 47, 52, 0.64);
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.popular-item:hover {
+  color: black;
+}
+
+.category-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: -50px;
+}

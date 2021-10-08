@@ -5,29 +5,29 @@ export default function CarouselCard({ post }) {
   const { price, descr, location, timeStamp, img } = post;
   return (
     <>
-      <div class='carousel-card'>
+      <div className='carousel-card'>
         <a href='/pages/product.html' className='carousel-card-href'>
-          <div class='carousel-card-container'>
-            <div class='carousel-image-container'>
+          <div className='carousel-card-container'>
+            <div className='carousel-image-container'>
               <img
                 src={img}
-                class='carousel-card-img'
+                className='carousel-card-img'
                 alt='Carousel card img'
               />
               <img
                 src={FAVOURITES_ICON}
-                class='carousel-heart-icon'
+                className='carousel-heart-icon'
                 alt='Favourites icon'
               />
             </div>
-            <div class='carousel-info-container'>
-              <div class='carousel-text-container'>
-                <span class='carousel-price-text'>RS {price}</span>
-                <span class='carousel-add-desc'>{descr}</span>
+            <div className='carousel-info-container'>
+              <div className='carousel-text-container'>
+                <span className='carousel-price-text'>RS {price}</span>
+                <span className='carousel-add-desc'>{descr}</span>
               </div>
-              <div class='carousel-location-container'>
-                <span class='carousel-location-text'>{location}</span>
-                <span class='carousel-location-text'>{timeStamp}</span>
+              <div className='carousel-location-container'>
+                <span className='carousel-location-text'>{location}</span>
+                <span className='carousel-location-text'>{timeStamp}</span>
               </div>
             </div>
           </div>

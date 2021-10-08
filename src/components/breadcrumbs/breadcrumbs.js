@@ -25,16 +25,14 @@ export default function Breadcrumbs({ breadcrumbs }) {
   };
 
   return (
-    <>
-      <section className='breadcrumbs'>
-        <Container>
-          <Row className='mt-3'>
-            <ul className='breadcrumbs-container justify-content-lg-start'>
-              {renderBreadcrumbs()}
-            </ul>
-          </Row>
-        </Container>
-      </section>
-    </>
+    <section className='breadcrumbs'>
+      <Container>
+        <Row className='mt-3'>
+          <ul className='breadcrumbs-container justify-content-lg-start'>
+            {renderBreadcrumbs()}
+          </ul>
+        </Row>
+      </Container>
+    </section>
   );
 }

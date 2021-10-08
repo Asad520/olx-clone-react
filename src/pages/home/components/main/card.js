@@ -8,8 +8,8 @@ export default function card({ post }) {
       <a href='/pages/product.html' className='card-link'>
         <div className='card-container'>
           {featured && (
-            <div class='featured'>
-              <span class='featured-text'>FEATURED</span>
+            <div className='featured'>
+              <span className='featured-text'>FEATURED</span>
             </div>
           )}
           <div className='card-image-container'>

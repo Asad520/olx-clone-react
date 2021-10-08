@@ -1,10 +1,11 @@
 import { Col } from 'react-bootstrap';
 import '../../assets/css/categories-bar-styles.css';
 import CategoriesContainer from './components/allCategoriesContainer';
+import CategoriesSection from './components/categoriesSection';
 import { ALL_CATEGORIES, MAIN_CATEGORIES } from '../../utils/data';
 import { MAIN_CATEGORY, DOWN_ARROW } from '../../utils/constants';
 
-export default function CategoriesBar() {
+export default function CategoriesBar({ shadow }) {
   const renderCategories = (type) => {
     const categories =
       type === MAIN_CATEGORY ? MAIN_CATEGORIES : ALL_CATEGORIES;
@@ -20,7 +21,7 @@ export default function CategoriesBar() {
   };
 
   return (
-    <section className='navigation'>
+    <CategoriesSection shadow={shadow}>
       <div className='container'>
         <div className='categories-bar justify-content-lg-start'>
           <div className='dropdown position-static'>
@@ -82,6 +83,6 @@ export default function CategoriesBar() {
           <ul className='nav-list'>{renderCategories(MAIN_CATEGORY)}</ul>
         </div>
       </div>
-    </section>
+    </CategoriesSection>
   );
 }

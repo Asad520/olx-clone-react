@@ -1,0 +1,83 @@
+.list-card {
+  display: flex;
+  border: 0.1rem solid rgba(0, 47, 52, 0.2);
+  border-radius: 4px;
+  margin: 10px;
+  position: relative;
+  text-decoration: none;
+}
+
+.list-img-container {
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.list-featured {
+  border-left: 0.3rem solid #ffce32;
+}
+
+.list-featured-tag {
+  background-color: #ffce32;
+  position: absolute;
+  padding: 2px 5px 2px 5px;
+  font-size: 10px;
+  color: #002f34;
+  font-weight: 700;
+}
+
+.list-heart-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.list-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-info-featured {
+  margin-top: 20px;
+}
+
+.list-price {
+  color: #002f34;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.list-descr {
+  font-size: 0.9rem;
+  color: #61797d;
+}
+
+.list-location-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -10px;
+}
+
+.list-location {
+  font-size: 0.7rem;
+  color: #61797d;
+}
