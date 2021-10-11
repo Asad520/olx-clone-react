@@ -3,9 +3,9 @@ import '../../../assets/css/list-card-styles.css';
 import { FAVOURITES_ICON } from '../../../utils/constants';
 
 export default function SearchItemCard({ product }) {
-  const { descr, location, timeStamp, price, img, featured } = product;
+  const { descr, location, timeStamp, price, img, featured, id } = product;
   return (
-    <Link to='/product' className='list-card'>
+    <Link to={`/product/${id}`} className='list-card'>
       <div className='list-img-container'>
         <img
           role='presentation'
@@ -17,41 +17,34 @@ export default function SearchItemCard({ product }) {
           data-was-processed='true'
         />
       </div>
-      {featured ? (
-        <div className='list-card-info  list-featured'>
-          <span className='list-featured-tag'>FEATURED</span>
 
-          <img
-            src={FAVOURITES_ICON}
-            alt='Favourites Icon'
-            className='list-heart-icon'
-          />
-          <div className='list-info-container list-info-featured'>
-            <span className='list-price'> Rs {price}</span>
-            <span className='list-descr'> {descr} </span>
-          </div>
-          <div className='list-location-container'>
-            <span className='list-location'>{location}</span>
-            <span className='list-location'>{timeStamp}</span>
-          </div>
+      <div
+        className={
+          featured ? 'list-card-info  list-featured' : 'list-card-info'
+        }
+      >
+        {featured && <span className='list-featured-tag'>FEATURED</span>}
+
+        <img
+          src={FAVOURITES_ICON}
+          alt='Favourites Icon'
+          className='list-heart-icon'
+        />
+        <div
+          className={
+            featured
+              ? 'list-info-container list-info-featured'
+              : 'list-info-container'
+          }
+        >
+          <span className='list-price'> Rs {price}</span>
+          <span className='list-descr'> {descr} </span>
         </div>
-      ) : (
-        <div className='list-card-info '>
-          <img
-            src={FAVOURITES_ICON}
-            alt='Favourites Icon'
-            className='list-heart-icon'
-          />
-          <div className='list-info-container'>
-            <span className='list-price'> Rs {price}</span>
-            <span className='list-descr'> {descr} </span>
-          </div>
-          <div className='list-location-container'>
-            <span className='list-location'>{location}</span>
-            <span className='list-location'>{timeStamp}</span>
-          </div>
+        <div className='list-location-container'>
+          <span className='list-location'>{location}</span>
+          <span className='list-location'>{timeStamp}</span>
         </div>
-      )}
+      </div>
     </Link>
   );
 }

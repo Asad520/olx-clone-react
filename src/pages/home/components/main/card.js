@@ -3,10 +3,10 @@ import '../../../../assets/css/home-card-styles.css';
 import { Link } from 'react-router-dom';
 
 export default function card({ post }) {
-  const { featured, img, descr, price, location, timeStamp } = post;
+  const { featured, img, descr, price, location, timeStamp, id } = post;
   return (
     <div className='card'>
-      <Link to='/product' className='card-link'>
+      <Link to={`/product/${id}`} className='card-link'>
         <div className='card-container'>
           {featured && (
             <div className='featured'>

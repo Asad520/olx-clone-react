@@ -8,9 +8,12 @@ import SellerLocation from './components/sellerLocation/sellerLocation';
 import AdsCarousel from './components/adsCarousel/adsCarousel';
 import { PRODUCT_BREADCRUMBS, POSTS } from '../../utils/data';
 import { Col, Container, Row } from 'react-bootstrap';
+import { useParams } from 'react-router';
 
-export default function Product({ product }) {
-  const { productImages, featured, seller } = POSTS[0];
+export default function Product() {
+  const { productId } = useParams();
+  const product = POSTS.find((post) => post.id === productId);
+  const { productImages, featured, seller } = product;
   return (
     <>
       <CategoriesBar shadow />

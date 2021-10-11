@@ -1,9 +1,5 @@
 import '../../assets/css/popular-searches-styles.css';
-import {
-  POPULAR_SEARCHES,
-  SEARCH_BREADCRUMBS,
-  SEARCH_PRODUCTS,
-} from '../../utils/data';
+import { POPULAR_SEARCHES, SEARCH_BREADCRUMBS, POSTS } from '../../utils/data';
 import CategoriesBar from '../../components/categoriesBar/categoriesBar';
 import PopularSearches from './components/popularSearches';
 import Breadcrumbs from '../../components/breadcrumbs/breadcrumbs';
@@ -16,7 +12,7 @@ export default function Search() {
   const search = { query: 'iPhone 12 mini', location: 'Pakistan' };
 
   const renderProducts = () => {
-    return SEARCH_PRODUCTS.map((product) => (
+    return POSTS.map((product) => (
       <SearchItemCard key={product.id} product={product} />
     ));
   };
