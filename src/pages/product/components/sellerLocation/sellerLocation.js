@@ -29,9 +29,9 @@ export default function SellerLocation() {
       </div>
       <div className='ad-id-container'>
         <span className='ad-id'>Ad id 1038275351</span>
-        <a href='#' className='report-ad'>
+        <div href='#' className='report-ad'>
           Report this ad
-        </a>
+        </div>
       </div>
     </>
   );

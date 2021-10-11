@@ -17,9 +17,9 @@ export default function headerButtons() {
       </section>
 
       <section className='sell-btn'>
-        <a href='#'>
+        <div>
           <img src={SELL_IMAGE} alt='Sell Text' className='sell-img' />
-        </a>
+        </div>
       </section>
     </Col>
   );

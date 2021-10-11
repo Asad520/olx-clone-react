@@ -12,9 +12,9 @@ export default function CategoriesBar({ shadow }) {
     return categories.map((category) => {
       return (
         <li className='category-item' key={category.id}>
-          <a className={type === MAIN_CATEGORY ? 'nav-item' : 'list-items'}>
+          <div className={type === MAIN_CATEGORY ? 'nav-item' : 'list-items'}>
             {category.name}
-          </a>
+          </div>
         </li>
       );
     });
@@ -25,14 +25,14 @@ export default function CategoriesBar({ shadow }) {
       <div className='container'>
         <div className='categories-bar justify-content-lg-start'>
           <div className='dropdown position-static'>
-            <a
+            <div
               className='all-categories-btn'
               data-bs-toggle='dropdown'
               href='#'
             >
               <div>ALL CATEGORIES</div>
               <img src={DOWN_ARROW} alt='Down Arrow' className='ms-1' />
-            </a>
+            </div>
             <CategoriesContainer
               className='dropdown-menu'
               aria-labelledby='dropdownMenuLink'

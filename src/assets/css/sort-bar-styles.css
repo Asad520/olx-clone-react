@@ -69,12 +69,14 @@
 .active-sort {
   font-size: 14px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .sort-arrow {
   width: 16px;
   height: 16px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .sort-item {
@@ -88,6 +90,7 @@
 
 .sort-item:hover {
   background-color: rgb(199, 255, 255);
+  cursor: pointer;
 }
 
 .sort-tick {
@@ -109,4 +112,5 @@
 
 .sort-list {
   padding: 0;
+  margin: 0;
 }

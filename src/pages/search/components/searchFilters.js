@@ -27,27 +27,27 @@ export default function SearchFilters() {
   const renderCategories = () => {
     return FILTER_CATEGORIES.map((category) => {
       return (
-        <li className='cat-item'>
-          <a href='' className='cat-item'>
+        <li className='cat-item' key={category.id}>
+          <div className='cat-item'>
             <span className={category?.active && 'active-cat'}>
               {' '}
               {category.name}{' '}
             </span>
             <span className='categories-count'>({category.count})</span>
-          </a>
+          </div>
         </li>
       );
     });
   };
 
   const renderSubcategories = (subcategories) => {
-    return subcategories.map((location) => {
+    return subcategories.map((subcategory) => {
       return (
-        <li className='cat-item'>
-          <a href='' className='cat-item'>
-            <span> {location.name} </span>
-            <span className='categories-count'>({location.count})</span>
-          </a>
+        <li className='cat-item' key={subcategory.id}>
+          <div className='cat-item'>
+            <span> {subcategory.name} </span>
+            <span className='categories-count'>({subcategory.count})</span>
+          </div>
         </li>
       );
     });
@@ -60,13 +60,8 @@ export default function SearchFilters() {
       <section className='container categories-container'>
         <div className='categories'>
           <span className='main-filter'> CATEGORIES </span>
-          <a href='' className='subcategory-1'>
-            All categories
-          </a>
-          <a href='' className='subcategory-2'>
-            {' '}
-            Mobiles
-          </a>
+          <div className='subcategory-1'>All categories</div>
+          <div className='subcategory-2'> Mobiles</div>
           <div className='subcategory-3'>
             <ul className='subcategory-list'>{renderCategories()}</ul>
           </div>
@@ -76,9 +71,7 @@ export default function SearchFilters() {
       <section className='container categories-container'>
         <div className='categories'>
           <span className='main-filter'> LOCATIONS </span>
-          <a href='' className='subcategory-1 active-cat'>
-            Pakistan
-          </a>
+          <div className='subcategory-1 active-cat'>Pakistan</div>
           <div>
             <ul className='subcategory-list'>
               {renderSubcategories(filterLocations)}
@@ -152,32 +145,30 @@ export default function SearchFilters() {
         <div className='categories'>
           <span className='main-filter'> CONDITION </span>
           <div className='checkboxes-container'>
-            <a href='#' className='used-container'>
+            <div className='used-container'>
               <input
                 type='checkbox'
                 id='used'
                 name='used'
                 className='checkbox'
-                readonly=''
               />
-              <label className='check-label' for='used'>
+              <label className='check-label'>
                 <span className='check-text'>Used</span>
                 <span className='check-count'>(154634)</span>
               </label>
-            </a>
-            <a href='#' className='used-container'>
+            </div>
+            <div className='used-container'>
               <input
                 type='checkbox'
                 id='used'
                 name='used'
                 className='checkbox'
-                readonly=''
               />
-              <label className='check-label' for='used'>
+              <label className='check-label'>
                 <span className='check-text'>New</span>
                 <span className='check-count'>(42518)</span>
               </label>
-            </a>
+            </div>
           </div>
         </div>
       </section>

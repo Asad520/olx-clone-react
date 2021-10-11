@@ -6,12 +6,12 @@ import {
 } from '../../../../utils/constants';
 
 export default function SellerDescription({ seller }) {
-  const { name, memberSince, phone } = seller;
+  const { name, memberSince } = seller;
   return (
     <>
       <div className='product-info-container mt-2'>
         <p className='seller-info-text'>Seller Description</p>
-        <a className='seller-profile-container'>
+        <div className='seller-profile-container'>
           <div className='d-flex'>
             <img
               src={PROFILE_PIC_ICON}
@@ -25,7 +25,7 @@ export default function SellerDescription({ seller }) {
             </div>
           </div>
           <img src={MEMBER_ARROW} alt='Right Arrow' width='18' height='18' />
-        </a>
+        </div>
         <button className='chat-button'>
           <span className='text-light'>Chat with seller</span>
         </button>

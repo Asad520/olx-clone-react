@@ -4,10 +4,8 @@ export default function PopularSearches({ popularSearches }) {
   const renderPopularSearches = () => {
     return popularSearches.map((item, index) => {
       return (
-        <li>
-          <a href='' className='popular-item'>
-            {item.name}
-          </a>
+        <li key={item.id}>
+          <span className='popular-item'>{item.name}</span>
           {index !== popularSearches.length - 1 && (
             <span className='popular-item'>-</span>
           )}

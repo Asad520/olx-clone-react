@@ -3,14 +3,14 @@ import '../../../../assets/css/images-container-styles.css';
 import { LEFT_ARROW, RIGHT_ARROW } from '../../../../utils/constants';
 
 export default function ImagesContainer({ productImages, featured }) {
-  const [currentImage, setCurrentImage] = useState(productImages[0]);
+  const [currentImage] = useState(productImages[0]);
 
   const renderImages = () => {
-    return productImages.map((image) => {
+    return productImages.map((image, index) => {
       return (
-        <button className='small-image'>
+        <button className='small-image' key={index}>
           <picture>
-            <source type='image/webp' srcset={image} />
+            <source type='image/webp' srcSet={image} />
             <img
               title='Husky puppies 0'
               src={image}
@@ -42,7 +42,7 @@ export default function ImagesContainer({ productImages, featured }) {
           </svg>
         </button>
         <picture>
-          <source type='image/webp' srcset={currentImage} />
+          <source type='image/webp' srcSet={currentImage} />
           <img
             alt='Husky puppies 0'
             title='Husky puppies 0'

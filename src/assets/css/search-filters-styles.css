@@ -24,26 +24,23 @@
 .cat-item {
   color: rgba(0, 47, 52, 0.64);
   font-size: 14px;
-  padding-bottom: 20px;
-  text-decoration: none;
+  padding-bottom: 10px;
 }
 
 .cat-item:hover {
   color: #002f34;
+  cursor: pointer;
 }
 
 .subcategory-1 {
   color: rgba(0, 47, 52, 0.64);
   font-size: 14px;
   margin-bottom: 20px;
-  text-decoration: none;
 }
 
 .companies-list-container {
   color: rgba(0, 47, 52, 0.64);
   font-size: 14px;
-
-  text-decoration: none;
 }
 
 .subcategory-1:hover {
@@ -55,7 +52,6 @@
   margin-bottom: 20px;
   color: rgba(0, 47, 52, 0.64);
   font-size: 14px;
-  text-decoration: none;
 }
 
 .subcategory-2:hover {

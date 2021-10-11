@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   DOWN_ARROW,
   SEARCH_SVG,
@@ -8,12 +9,25 @@ import { SEARCH_LOCATIONS } from '../../../utils/data';
 import { Col } from 'react-bootstrap';
 import '../../../assets/css/location-search-styles.css';
 
-export default function locationSearch() {
+export default function LocationSearch() {
+  const [location, setLocation] = useState('Pakistan');
+
+  const renderLocations = () => {
+    return SEARCH_LOCATIONS.map((location) => {
+      return (
+        <li key={location.id}>
+          <div className='location-item'>
+            <img src={LOCATION_MARKER_ICON} alt='Current location icon' />
+            <span className='location-item-text'>{location.location}</span>
+          </div>
+        </li>
+      );
+    });
+  };
   return (
     <Col className='dropdown' lg={3} md={12}>
-      <a
+      <div
         className='location-search'
-        href='#'
         id='navbarDropdown'
         data-bs-toggle='dropdown'
         aria-expanded='false'
@@ -25,38 +39,26 @@ export default function locationSearch() {
           <input
             className='search'
             type='text'
-            value='Pakistan'
+            value={location}
             placeholder='Search city, area or locality'
+            onChange={(event) => setLocation(event.target.value)}
           />
         </div>
         <img src={DOWN_ARROW} alt='Down Arrow' />
-      </a>
+      </div>
 
       <div className='dropdown-menu' aria-labelledby='navbarDropdown'>
         <div className='current-location-container'>
-          <a className='current-location'>
+          <div className='current-location'>
             <img src={CURRENT_LOCATION_ICON} alt='Current Location Icon' />
             <div className='current-location-text'>Use current location</div>
-          </a>
+          </div>
         </div>
         <hr className='dropdown-divider' />
         <div className='region-container'>
           <span className='region-text'>CHOOSE REGION</span>
         </div>
-        <ul className='locations-list'>
-          {SEARCH_LOCATIONS.map((location) => {
-            return (
-              <li key={location.id}>
-                <a className='location-item' href='#'>
-                  <img src={LOCATION_MARKER_ICON} />
-                  <span className='location-item-text'>
-                    {location.location}
-                  </span>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        <ul className='locations-list'>{renderLocations()}</ul>
       </div>
     </Col>
   );

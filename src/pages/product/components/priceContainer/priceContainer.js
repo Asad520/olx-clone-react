@@ -9,16 +9,16 @@ export default function PriceContainer({ product }) {
         <div className='product-price-container'>
           <h2 className='fw-bold'>Rs {price}</h2>
           <div>
-            <a href='#' className='share-icon'>
+            <span className='share-icon'>
               <img src={SHARE_ICON} className='info-icon' alt='Share icon' />
-            </a>
-            <a href='#'>
+            </span>
+            <span>
               <img
                 src={FAVOURITES_ICON}
                 className='info-icon'
                 alt='Favourites icon'
               />
-            </a>
+            </span>
           </div>
         </div>
         <p className='product-heading'>{descr}</p>

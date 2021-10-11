@@ -9,6 +9,7 @@
 
 .all-categories-btn:hover {
   color: #002f34;
+  cursor: pointer;
 }
 
 .categories-bar {

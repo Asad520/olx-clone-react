@@ -19,9 +19,9 @@ export default function Footer() {
   const renderFooterCategories = (data) => {
     return data.map((category) => {
       return (
-        <a key={category.id} href='#' className='footer-category'>
+        <div key={category.id} className='footer-category'>
           {category.name}
-        </a>
+        </div>
       );
     });
   };
@@ -50,56 +50,56 @@ export default function Footer() {
             <span className='footer-heading'>FOLLOW US</span>
             <div className='social-media-container'>
               <div className='d-flex justify-content-between w-120'>
-                <a href='#' className='footer-category'>
+                <div className='footer-category'>
                   <img
                     src={FACEBOOK_ICON}
                     alt='Facebook logo'
                     width='24'
                     height='24'
                   />
-                </a>
-                <a href='#' className='footer-category'>
+                </div>
+                <div className='footer-category'>
                   <img
                     src={TWITTER_ICON}
                     alt='Twitter logo'
                     width='24'
                     height='24'
                   />
-                </a>
-                <a href='#' className='footer-category'>
+                </div>
+                <div className='footer-category'>
                   <img
                     src={YOUTUBE_ICON}
                     alt='Youtube logo'
                     width='24'
                     height='24'
                   />
-                </a>
-                <a href='#' className='footer-category'>
+                </div>
+                <div className='footer-category'>
                   <img
                     src={INSTAGRAM_ICON}
                     alt='Instagram logo'
                     width='24'
                     height='24'
                   />
-                </a>
+                </div>
               </div>
               <div className='store-container'>
-                <a href=''>
+                <div>
                   <img
                     src={APPSTORE_ICON}
                     alt='Appstore logo'
                     width='84'
                     height='28'
                   />
-                </a>
-                <a href=''>
+                </div>
+                <div>
                   <img
                     src={PLAYSTORE_ICON}
                     alt='Playstore logo'
                     width='84'
                     height='28'
                   />
-                </a>
+                </div>
               </div>
             </div>
           </div>

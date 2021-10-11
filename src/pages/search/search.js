@@ -17,7 +17,7 @@ export default function Search() {
 
   const renderProducts = () => {
     return SEARCH_PRODUCTS.map((product) => (
-      <SearchItemCard product={product} />
+      <SearchItemCard key={product.id} product={product} />
     ));
   };
 

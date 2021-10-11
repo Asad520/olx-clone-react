@@ -6,7 +6,7 @@ export default function main() {
   const renderCards = (posts) => {
     return posts.map((post) => {
       return (
-        <Col md={3}>
+        <Col md={3} key={post.id}>
           <Card post={post} />
         </Col>
       );

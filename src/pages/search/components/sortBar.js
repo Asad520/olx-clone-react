@@ -26,9 +26,8 @@ export default function SortBar() {
             </button>
           </div>
           <div className='sort-dropdown'>
-            <a
+            <div
               className='sort'
-              href='#'
               id='sortDropdown'
               data-bs-toggle='dropdown'
               aria-expanded='false'
@@ -36,14 +35,14 @@ export default function SortBar() {
               <span className='sort-text'> SORT BY: </span>
               <span className='active-sort'> Newly listed </span>
               <img src={DOWN_ARROW} className='sort-arrow' alt='Down Arrow' />
-            </a>
+            </div>
             <div
               className='dropdown-menu sort-dropdown'
               aria-labelledby='sortDropdown'
             >
               <ul className='sort-list'>
                 <li>
-                  <a href='' className='sort-item'>
+                  <div className='sort-item'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       viewBox='0 0 1024 1024'
@@ -52,22 +51,22 @@ export default function SortBar() {
                       <path d={SELECTED_ITEM}></path>
                     </svg>
                     <span className='sort-item-text'> Newly Listed </span>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href='' className='sort-item'>
+                  <div className='sort-item'>
                     <span className='sort-item-text'> Most Relevant </span>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href='' className='sort-item'>
+                  <div className='sort-item'>
                     <span className='sort-item-text'> Lowest Price </span>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a href='' className='sort-item'>
+                  <div className='sort-item'>
                     <span className='sort-item-text'> Highest Price </span>
-                  </a>
+                  </div>
                 </li>
               </ul>
             </div>

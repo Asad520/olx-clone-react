@@ -1,11 +1,12 @@
 import { FAVOURITES_ICON } from '../../../../utils/constants';
 import '../../../../assets/css/home-card-styles.css';
+import { Link } from 'react-router-dom';
 
 export default function card({ post }) {
   const { featured, img, descr, price, location, timeStamp } = post;
   return (
     <div className='card'>
-      <a href='/pages/product.html' className='card-link'>
+      <Link to='/product' className='card-link'>
         <div className='card-container'>
           {featured && (
             <div className='featured'>
@@ -43,7 +44,7 @@ export default function card({ post }) {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }
