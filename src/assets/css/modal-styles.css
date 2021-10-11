@@ -1,0 +1,175 @@
+.modal {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.modal-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.modal-img {
+  width: 30%;
+}
+
+.welcome-text {
+  font-size: 19px;
+  color: #002f34;
+  margin-top: 27px;
+}
+
+.community-text {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-login-btn {
+  display: flex;
+  border: 2px solid #002f34;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 10px 0px 10px 0px;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.modal-login-btn:hover {
+  border: 4px solid #002f34;
+}
+
+.login-logo {
+  margin-left: 20px;
+}
+
+.login-text {
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.login-terms {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.modal-back {
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.email-modal-img {
+  width: 100px;
+  height: 100px;
+  margin-top: 15%;
+}
+
+.modal-email-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.email-input {
+  width: 120%;
+  border-radius: 4px;
+  border: 1px solid #000;
+  color: #002f34;
+  margin-top: 20%;
+  padding: 10px;
+}
+
+.modal-next-btn {
+  margin-top: 7%;
+  width: 120%;
+  background-color: #002f34;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+}
+
+.reveal-text {
+  color: rgba(0, 47, 52, 0.64);
+  text-align: center;
+  margin-top: 20%;
+  font-size: 14px;
+  margin-bottom: 8%;
+}
+
+.pwd-modal-img {
+  width: 60px;
+  height: 60px;
+  margin-top: 10%;
+}
+
+.create-pwd-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.pwd-input {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #000;
+  color: #002f34;
+  margin-top: 5%;
+  padding: 10px;
+}
+
+.create-pwd-btn {
+  margin-top: 10%;
+  width: 100%;
+  background-color: #002f34;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+.create-pwd-btn:hover {
+  border: 4px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.pwd-instructions {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #194448;
+}
+
+.terms-text {
+  color: #296efd;
+  text-decoration: underline;
+  cursor: pointer;
+}

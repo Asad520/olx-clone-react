@@ -57,6 +57,18 @@ const BIG_VIEW_ICON =
   'https://www.olx.com.pk/assets/iconGallery_noinline.0812d3e7194bb21f539ef9e77bdd3a1c.svg';
 const SELECTED_ITEM =
   'M878.34 192l-537 547.68L145.65 540.1H85.33v61.55L311.17 832h60.35l567.15-578.47V192z';
+const MODAL_OLX_LOGO =
+  'https://www.olx.com.pk/assets/iconOLXLogin_noinline.93e8a1a9cf50902ba5250814f57810ff.svg';
+const GOOGLE_LOGIN_ICON =
+  'https://www.olx.com.pk/assets/iconGoogleLogin_noinline.633b1f5afb5219bedca01d2367642a28.svg';
+const FACEBOOK_LOGIN_ICON =
+  'https://www.olx.com.pk/assets/iconFacebookLogin_noinline.70f71af03bbf63ca01a044ff5c5eb342.svg';
+const EMAIL_LOGIN_ICON =
+  'https://www.olx.com.pk/assets/iconMailLogin_noinline.248b2cbda65d833f5f8f87f18a346cc9.svg';
+const PHONE_LOGIN_ICON =
+  'https://www.olx.com.pk/assets/iconPhoneLogin_noinline.4dcd5ec6754daea7e5c3db60df33309c.svg';
+const BACK_ICON =
+  'M512 124.16v54.83L209.7 473.17l676.96.05L925.48 512l-38.82 38.78H209.75L512 845.01v54.87h-56.32L85.33 539.43v-54.86l370.35-360.4H512z';
 
 export {
   OLX_LOGO,
@@ -85,4 +97,10 @@ export {
   GRID_VIEW_ICON,
   BIG_VIEW_ICON,
   SELECTED_ITEM,
+  MODAL_OLX_LOGO,
+  GOOGLE_LOGIN_ICON,
+  FACEBOOK_LOGIN_ICON,
+  EMAIL_LOGIN_ICON,
+  PHONE_LOGIN_ICON,
+  BACK_ICON,
 };
