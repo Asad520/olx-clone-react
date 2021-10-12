@@ -1,11 +1,11 @@
-import '../../../assets/css/sort-bar-styles.css';
+import '../../../../assets/css/sort-bar-styles.css';
 import {
   DOWN_ARROW,
   LIST_VIEW_ICON,
   GRID_VIEW_ICON,
   BIG_VIEW_ICON,
   SELECTED_ITEM,
-} from '../../../utils/constants';
+} from '../../../../utils/constants';
 
 export default function SortBar() {
   return (

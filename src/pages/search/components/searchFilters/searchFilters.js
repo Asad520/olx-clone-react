@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import '../../../assets/css/search-filters-styles.css';
+import '../../../../assets/css/search-filters-styles.css';
 import {
   FILTER_CATEGORIES,
   FILTER_COMPANIES,
   FILTER_LOCATIONS,
-} from '../../../utils/data';
+} from '../../../../utils/data';
 
 export default function SearchFilters() {
   const [viewMoreLocations, setViewMoreLocations] = useState(true);
