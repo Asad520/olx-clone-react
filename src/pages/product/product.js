@@ -13,7 +13,7 @@ import { useParams } from 'react-router';
 export default function Product() {
   const { productId } = useParams();
   const product = POSTS.find((post) => post.id === productId);
-  const { productImages, featured, seller } = product;
+  const { productImages, featured, seller, img } = product;
   return (
     <>
       <CategoriesBar shadow />
@@ -21,16 +21,13 @@ export default function Product() {
       <Container>
         <Row>
           <Col md={8}>
-            <ImagesContainer
-              productImages={productImages}
-              featured={featured}
-            />
-            <ProductDetails />
+            <ImagesContainer product={product} />
+            <ProductDetails product={product} />
             <AdsCarousel posts={POSTS} />
           </Col>
 
           <Col md={4}>
-            <PriceContainer product={POSTS[0]} />
+            <PriceContainer product={product} />
             <SellerDescription seller={seller} />
             <SellerLocation />
           </Col>

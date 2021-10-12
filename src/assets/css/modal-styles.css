@@ -1,6 +1,6 @@
-.modal {
-  overflow-x: hidden;
+.modal-container {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .modal-close {
@@ -19,6 +19,7 @@
 
 .modal-img {
   width: 30%;
+  margin-top: -20px;
 }
 
 .welcome-text {
@@ -67,6 +68,7 @@
 
 .login-terms {
   margin-top: 30px;
+  margin-bottom: -10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,7 +87,6 @@
 .email-modal-img {
   width: 100px;
   height: 100px;
-  margin-top: 15%;
 }
 
 .modal-email-text {
@@ -120,13 +121,13 @@
   text-align: center;
   margin-top: 20%;
   font-size: 14px;
-  margin-bottom: 8%;
+  margin-bottom: 7%;
 }
 
 .pwd-modal-img {
   width: 60px;
   height: 60px;
-  margin-top: 10%;
+  margin-top: -40px;
 }
 
 .create-pwd-text {
@@ -153,7 +154,7 @@
   border-radius: 4px;
   padding: 15px;
   text-align: center;
-  margin-bottom: 15%;
+  margin-bottom: 17%;
 }
 
 .create-pwd-btn:hover {

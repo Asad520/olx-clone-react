@@ -1,23 +1,25 @@
+import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import { MODAL_OLX_LOGO } from '../../../utils/constants';
 
 export default function PasswordModal(props) {
   const { show, handleClose } = props;
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   return (
     <Modal show={show} onHide={handleClose}>
       <button
         type='button'
-        class='btn-close modal-close'
-        data-bs-dismiss='modal'
-        aria-label='Close'
+        className='btn-close modal-close'
+        onClick={handleClose}
       ></button>
 
-      <div class='modal-body'>
-        <img src={MODAL_OLX_LOGO} alt='OLX logo' class='pwd-modal-img' />
-        <span class='modal-email-text'>
+      <div className='modal-body'>
+        <img src={MODAL_OLX_LOGO} alt='OLX logo' className='pwd-modal-img' />
+        <span className='modal-email-text'>
           Create a password to login faster next time
         </span>
-        <span class='create-pwd-text'>
+        <span className='create-pwd-text'>
           You are creating a password for
           <strong>test@gmail.com</strong>. This will help you login faster next
           time
@@ -25,25 +27,25 @@ export default function PasswordModal(props) {
         <input
           id='pwd'
           name='pwd'
-          spellcheck='false'
-          class='pwd-input'
+          className='pwd-input'
           type='password'
-          placeholder='New Password'
-          value=''
+          placeholder='New Password...'
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
         />
-        <span class='pwd-instructions'>
+        <span className='pwd-instructions'>
           Use minimum 6 characters, and at least one letter and one number
         </span>
         <input
-          id='pwd'
+          id='confirmPwd'
           name='pwd'
-          spellcheck='false'
-          class='pwd-input'
+          className='pwd-input'
           type='password'
           placeholder='Confirm new Password'
-          value=''
+          value={confirmPassword}
+          onChange={(event) => setConfirmPassword(event.target.value)}
         />
-        <button class='create-pwd-btn'>Create Password</button>
+        <button className='create-pwd-btn'>Create Password</button>
       </div>
     </Modal>
   );

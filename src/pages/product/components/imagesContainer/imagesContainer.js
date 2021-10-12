@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
 import '../../../../assets/css/images-container-styles.css';
 import { LEFT_ARROW, RIGHT_ARROW } from '../../../../utils/constants';
 
-export default function ImagesContainer({ productImages, featured }) {
-  const [currentImage] = useState(productImages[0]);
+export default function ImagesContainer({ product }) {
+  const { productImages, featured, img } = product;
 
   const renderImages = () => {
     return productImages.map((image, index) => {
@@ -42,11 +41,11 @@ export default function ImagesContainer({ productImages, featured }) {
           </svg>
         </button>
         <picture>
-          <source type='image/webp' srcSet={currentImage} />
+          <source type='image/webp' srcSet={img} />
           <img
             alt='Husky puppies 0'
             title='Husky puppies 0'
-            src={currentImage}
+            src={img}
             className='big-img'
           />
         </picture>

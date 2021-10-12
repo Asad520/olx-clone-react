@@ -14,55 +14,55 @@ export default function LoginModal(props) {
     <Modal show={show} onHide={handleClose}>
       <button
         type='button'
-        class='btn-close modal-close'
+        className='btn-close modal-close'
         onClick={handleClose}
       ></button>
-      <div class='modal-body'>
-        <img src={MODAL_OLX_LOGO} alt='OLX Logo' class='modal-img' />
-        <span class='welcome-text'>WELCOME TO OLX</span>
-        <span class='community-text'>
+      <div className='modal-body'>
+        <img src={MODAL_OLX_LOGO} alt='OLX Logo' className='modal-img' />
+        <span className='welcome-text'>WELCOME TO OLX</span>
+        <span className='community-text'>
           The trusted community of <br />
           buyers and sellers.
         </span>
-        <div class='modal-buttons'>
-          <button class='modal-login-btn'>
+        <div className='modal-buttons'>
+          <button className='modal-login-btn'>
             <img
               src={GOOGLE_LOGIN_ICON}
               alt='Google Login Icon'
-              class='login-logo'
+              className='login-logo'
             />
-            <span class='login-text'>Continue with Google</span>
+            <span className='login-text'>Continue with Google</span>
           </button>
-          <button class='modal-login-btn'>
+          <button className='modal-login-btn'>
             <img
               src={FACEBOOK_LOGIN_ICON}
               alt='Facebook Login Icon'
-              class='login-logo'
+              className='login-logo'
             />
-            <span class='login-text'>Continue with Facbook</span>
+            <span className='login-text'>Continue with Facbook</span>
           </button>
 
-          <button class='modal-login-btn' onClick={openEmailModal}>
+          <button className='modal-login-btn' onClick={openEmailModal}>
             <img
               src={EMAIL_LOGIN_ICON}
               alt='Email Login Icon'
-              class='login-logo'
+              className='login-logo'
             />
-            <span class='login-text'>Continue with Email</span>
+            <span className='login-text'>Continue with Email</span>
           </button>
-          <button class='modal-login-btn'>
+          <button className='modal-login-btn'>
             <img
               src={PHONE_LOGIN_ICON}
               alt='Phone Login Icon'
-              class='login-logo'
+              className='login-logo'
             />
-            <span class='login-text'>Continue with Phone</span>
+            <span className='login-text'>Continue with Phone</span>
           </button>
         </div>
 
-        <div class='login-terms'>
+        <div className='login-terms'>
           <span> By continuing, you are accepting </span>
-          <div class='terms-text'>
+          <div className='terms-text'>
             OLX Terms and Conditions and Privacy Policy
           </div>
         </div>

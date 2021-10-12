@@ -55,6 +55,7 @@ const OLX_INFO = [
 
 const POSTS = [
   {
+    type: 'Other breeds',
     img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
     productImages: [
       'https://images.olx.com.pk/thumbnails/182804345-400x300.webp',
@@ -74,6 +75,7 @@ const POSTS = [
     seller: { name: 'ali', memberSince: 'Jan 2014', phone: '92 123 4567' },
   },
   {
+    type: 'Other breeds',
     img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
     productImages: [
       'https://images.olx.com.pk/thumbnails/182804345-400x300.webp',
@@ -93,6 +95,7 @@ const POSTS = [
     seller: { name: 'ali', memberSince: 'Jan 2014', phone: '92 123 4567' },
   },
   {
+    type: 'Other breeds',
     img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
     productImages: [
       'https://images.olx.com.pk/thumbnails/182804345-400x300.webp',
@@ -112,6 +115,7 @@ const POSTS = [
     seller: { name: 'ali', memberSince: 'Jan 2014', phone: '92 123 4567' },
   },
   {
+    type: 'Other breeds',
     img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
     productImages: [
       'https://images.olx.com.pk/thumbnails/182804345-400x300.webp',
@@ -131,6 +135,7 @@ const POSTS = [
     seller: { name: 'ali', memberSince: 'Jan 2014', phone: '92 123 4567' },
   },
   {
+    type: 'Other breeds',
     img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
     productImages: [
       'https://images.olx.com.pk/thumbnails/182804345-400x300.webp',
@@ -150,6 +155,7 @@ const POSTS = [
     seller: { name: 'ali', memberSince: 'Jan 2014', phone: '92 123 4567' },
   },
   {
+    type: 'Other breeds',
     img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
     productImages: [
       'https://images.olx.com.pk/thumbnails/182804345-400x300.webp',
@@ -169,6 +175,7 @@ const POSTS = [
     seller: { name: 'ali', memberSince: 'Jan 2014', phone: '92 123 4567' },
   },
   {
+    type: 'Other breeds',
     img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
     productImages: [
       'https://images.olx.com.pk/thumbnails/182804345-400x300.webp',
@@ -188,6 +195,7 @@ const POSTS = [
     seller: { name: 'ali', memberSince: 'Jan 2014', phone: '92 123 4567' },
   },
   {
+    type: 'Other breeds',
     img: 'https://images.olx.com.pk/thumbnails/182804345-240x180.jpeg',
     productImages: [
       'https://images.olx.com.pk/thumbnails/182804345-400x300.webp',

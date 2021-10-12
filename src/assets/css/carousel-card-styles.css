@@ -48,19 +48,22 @@
   color: #61797d;
   font-size: 12px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .carousel-location-container {
   margin-bottom: 5px;
-  margin-left: -5px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .carousel-location-text {
   color: #61797d;
   font-size: 10px;
+  overflow: hidden;
 }
 
-.carousel-card-href {
+.carousel-card {
   text-decoration: none;
 }
