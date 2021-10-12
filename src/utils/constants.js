@@ -1,3 +1,6 @@
+const HOME_TITLE =
+  'OLX - Buy and Sell for free anywhere in Pakistan with OLX online classifieds';
+
 const OLX_LOGO =
   'https://www.olx.com.pk/assets/logo_noinline.1cdf230e49c0530ad4b8d43e37ecc4a4.svg';
 
@@ -71,6 +74,7 @@ const BACK_ICON =
   'M512 124.16v54.83L209.7 473.17l676.96.05L925.48 512l-38.82 38.78H209.75L512 845.01v54.87h-56.32L85.33 539.43v-54.86l370.35-360.4H512z';
 
 export {
+  HOME_TITLE,
   OLX_LOGO,
   DOWN_ARROW,
   CURRENT_LOCATION_ICON,

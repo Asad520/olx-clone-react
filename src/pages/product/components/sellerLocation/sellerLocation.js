@@ -1,12 +1,13 @@
 import '../../../../assets/css/seller-location-styles.css';
 import { RIGHT_ARROW } from '../../../../utils/constants';
 
-export default function SellerLocation() {
+export default function SellerLocation({ product }) {
+  const { location, id } = product;
   return (
     <>
       <div className='product-info-container mt-5'>
         <h5>Posted in</h5>
-        <span className='map-location-text'>Bahria Town, Lahore, Punjab</span>
+        <span className='map-location-text'>{location}</span>
         <div className='map-container'>
           <iframe
             title='seller location'
@@ -28,10 +29,8 @@ export default function SellerLocation() {
         </div>
       </div>
       <div className='ad-id-container'>
-        <span className='ad-id'>Ad id 1038275351</span>
-        <div href='#' className='report-ad'>
-          Report this ad
-        </div>
+        <span className='ad-id'>Ad id {id}</span>
+        <div className='report-ad'>Report this ad</div>
       </div>
     </>
   );
