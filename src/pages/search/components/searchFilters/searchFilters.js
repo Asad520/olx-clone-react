@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../../../assets/css/search-filters-styles.css';
+import '../css/search-filters-styles.css';
 import {
   FILTER_CATEGORIES,
   FILTER_COMPANIES,

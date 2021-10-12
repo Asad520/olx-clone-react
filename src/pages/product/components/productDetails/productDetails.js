@@ -1,4 +1,4 @@
-import '../../../../assets/css/product-details-styles.css';
+import '../css/product-details-styles.css';
 
 export default function ProductDetails({ product }) {
   const { price, type, descr } = product;

@@ -1,5 +1,5 @@
 import { FAVOURITES_ICON } from '../../../../utils/constants';
-import '../../../../assets/css/home-card-styles.css';
+import '../css/home-card-styles.css';
 import { Link } from 'react-router-dom';
 
 export default function card({ post }) {

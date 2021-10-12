@@ -1,4 +1,4 @@
-import '../../assets/css/popular-searches-styles.css';
+import './components/css/popular-searches-styles.css';
 import { useParams } from 'react-router';
 import { Col, Container, Row } from 'react-bootstrap';
 import { POPULAR_SEARCHES, SEARCH_BREADCRUMBS, POSTS } from '../../utils/data';

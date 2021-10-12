@@ -1,5 +1,5 @@
 import { Modal } from 'react-bootstrap';
-import '../../../assets/css/modal-styles.css';
+import './css/modal-styles.css';
 import {
   MODAL_OLX_LOGO,
   EMAIL_LOGIN_ICON,

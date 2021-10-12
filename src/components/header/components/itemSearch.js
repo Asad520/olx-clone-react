@@ -1,7 +1,7 @@
-import '../../../assets/css/item-search-styles.css';
+import './css/item-search-styles.css';
 import { SEARCH_SVG } from '../../../utils/constants';
 import { Col } from 'react-bootstrap';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { useState } from 'react';
 
 export default function ItemSearch() {

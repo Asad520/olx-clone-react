@@ -1,5 +1,5 @@
 import { Col } from 'react-bootstrap';
-import '../../assets/css/categories-bar-styles.css';
+import './css/categories-bar-styles.css';
 import CategoriesContainer from './components/allCategoriesContainer';
 import CategoriesSection from './components/categoriesSection';
 import { ALL_CATEGORIES, MAIN_CATEGORIES } from '../../utils/data';

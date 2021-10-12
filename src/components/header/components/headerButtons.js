@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../../assets/css/header-buttons-styles.css';
+import './css/header-buttons-styles.css';
 import SELL_IMAGE from '../../../assets/images/sell.png';
 import { Col } from 'react-bootstrap';
 import LoginModal from './loginModal';

@@ -1,4 +1,4 @@
-import '../../../../assets/css/sort-bar-styles.css';
+import '../css/sort-bar-styles.css';
 import {
   DOWN_ARROW,
   LIST_VIEW_ICON,

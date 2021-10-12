@@ -7,7 +7,7 @@ import {
 } from '../../../utils/constants';
 import { SEARCH_LOCATIONS } from '../../../utils/data';
 import { Col } from 'react-bootstrap';
-import '../../../assets/css/location-search-styles.css';
+import './css/location-search-styles.css';
 
 export default function LocationSearch() {
   const [location, setLocation] = useState('Pakistan');

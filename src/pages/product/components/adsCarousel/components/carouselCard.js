@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../../../../../assets/css/carousel-card-styles.css';
+import '../../css/carousel-card-styles.css';
 import { FAVOURITES_ICON } from '../../../../../utils/constants';
 
 export default function CarouselCard({ post }) {

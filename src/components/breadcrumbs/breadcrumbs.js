@@ -1,5 +1,5 @@
 import { Container, Row } from 'react-bootstrap';
-import '../../assets/css/breadcrumbs-styles.css';
+import './css/breadcrumbs-styles.css';
 
 export default function Breadcrumbs({ breadcrumbs }) {
   const renderBreadcrumbs = () => {

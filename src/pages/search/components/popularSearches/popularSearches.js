@@ -1,4 +1,4 @@
-import '../../../../assets/css/popular-searches-styles.css';
+import '../css/popular-searches-styles.css';
 
 export default function PopularSearches({ popularSearches }) {
   const renderPopularSearches = () => {

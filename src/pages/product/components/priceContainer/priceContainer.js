@@ -1,4 +1,4 @@
-import '../../../../assets/css/price-container-styles.css';
+import '../css/price-container-styles.css';
 import { FAVOURITES_ICON, SHARE_ICON } from '../../../../utils/constants';
 
 export default function PriceContainer({ product }) {
