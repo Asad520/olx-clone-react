@@ -5,11 +5,13 @@ import { Col } from 'react-bootstrap';
 import LoginModal from './loginModal';
 import EmailModal from './emailModal';
 import PasswordModal from './passwordModal';
+import { signOutUser } from '../../../utils/services/auth';
 
 export default function HeaderButtons() {
   const [loginModal, setLoginModal] = useState(false);
   const [emailModal, setEmailModal] = useState(false);
   const [passwordModal, setPasswordModal] = useState(false);
+
   return (
     <>
       <Col className='header-buttons' lg={3}>
@@ -24,7 +26,7 @@ export default function HeaderButtons() {
         </section>
 
         <section className='sell-btn'>
-          <div>
+          <div onClick={() => signOutUser()}>
             <img src={SELL_IMAGE} alt='Sell Text' className='sell-img' />
           </div>
         </section>
