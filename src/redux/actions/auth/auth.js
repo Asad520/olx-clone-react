@@ -14,6 +14,7 @@ export const login = (provider) => {
       const { user } = await socialMediaAuth(provider);
       console.log('action success login', user.displayName);
       dispatch(loginSuccess(user));
+      return true;
     } catch (error) {
       console.log(error);
     }

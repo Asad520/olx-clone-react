@@ -19,3 +19,86 @@
   width: 110px;
   cursor: pointer;
 }
+
+.user-btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.notifications-icon {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  margin-right: 2%;
+}
+
+.notifications-icon:hover {
+  background-color: rgb(153, 239, 241);
+}
+
+.user-container {
+  margin-left: 15px;
+  display: flex;
+  cursor: pointer;
+}
+
+.profile-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.dropdown-profile-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.hello-text {
+  font-size: 14px;
+  color: #002f34;
+}
+
+.username-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #002f34;
+}
+
+.edit-profile-text {
+  font-size: 14px;
+  text-decoration: underline;
+  color: #222;
+  cursor: pointer;
+}
+
+.profile-option {
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.profile-option:hover {
+  background-color: rgb(153, 239, 241);
+}
+
+.profile-option-icon {
+  margin-left: 5px;
+}
+
+.profile-option-text {
+  margin-left: 15px;
+  font-weight: 300;
+}

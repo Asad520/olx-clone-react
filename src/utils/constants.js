@@ -72,6 +72,24 @@ const PHONE_LOGIN_ICON =
   'https://www.olx.com.pk/assets/iconPhoneLogin_noinline.4dcd5ec6754daea7e5c3db60df33309c.svg';
 const BACK_ICON =
   'M512 124.16v54.83L209.7 473.17l676.96.05L925.48 512l-38.82 38.78H209.75L512 845.01v54.87h-56.32L85.33 539.43v-54.86l370.35-360.4H512z';
+const CHAT_ICON =
+  'https://www.olx.com.pk/assets/iconChat_noinline.31f5df4a6a21fc770ed6863958662677.svg';
+const NOTIFICATIONS_ICON =
+  'https://www.olx.com.pk/assets/iconNotifications_noinline.4444f6b42acbe30d772d80ef1225f574.svg';
+const DEFAULT_PROFILE_IMG =
+  'https://www.olx.com.pk/assets/iconProfilePicture.7975761176487dc62e25536d9a36a61d.png';
+const MY_ADS_ICON =
+  'https://www.olx.com.pk/assets/iconMyAds_noinline.81f6b0cc8a3d16d363fb142e1489d035.svg';
+const BUSINESS_PACKAGES_ICON =
+  'https://www.olx.com.pk/assets/iconBusinessPackages_noinline.64a7db94ef2eb1776d43916ce82b1a40.svg';
+const BILLING_ICON =
+  'https://www.olx.com.pk/assets/iconBoughtPackages_noinline.b29b2b61c39def95f4bf58ac5b6dbb59.svg';
+const HELP_ICON =
+  'https://www.olx.com.pk/assets/iconHelp_noinline.f07d255148323e318808a50c52097d0c.svg';
+const SETTINGS_ICON =
+  'https://www.olx.com.pk/assets/iconFilters_noinline.0aa1e7bd623dcbcc065196fa3ccba789.svg';
+const LOGOUT_ICON =
+  'https://www.olx.com.pk/assets/iconLogout_noinline.9da9ed94dfe84e900cc1ae3198b0375b.svg';
 
 export {
   HOME_TITLE,
@@ -107,4 +125,13 @@ export {
   EMAIL_LOGIN_ICON,
   PHONE_LOGIN_ICON,
   BACK_ICON,
+  CHAT_ICON,
+  NOTIFICATIONS_ICON,
+  DEFAULT_PROFILE_IMG,
+  MY_ADS_ICON,
+  BUSINESS_PACKAGES_ICON,
+  BILLING_ICON,
+  HELP_ICON,
+  SETTINGS_ICON,
+  LOGOUT_ICON,
 };

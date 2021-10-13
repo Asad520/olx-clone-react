@@ -10,10 +10,19 @@ import {
 } from '../../../utils/constants';
 import { googleProvider } from '../../../utils/services/authProviders';
 import { login } from '../../../redux/actions/auth/auth';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
 export default function LoginModal(props) {
   const { show, handleClose, openEmailModal } = props;
+  const user = useSelector((state) => state.auth.user);
+
   const dispatch = useDispatch();
+  useEffect(() => {
+    if (user) {
+      handleClose();
+    }
+  }, [user]);
 
   return (
     <Modal show={show} onHide={handleClose}>
