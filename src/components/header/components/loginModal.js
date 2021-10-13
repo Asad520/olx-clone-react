@@ -1,3 +1,4 @@
+import { useDispatch } from 'react-redux';
 import { Modal } from 'react-bootstrap';
 import './css/modal-styles.css';
 import {
@@ -8,16 +9,11 @@ import {
   PHONE_LOGIN_ICON,
 } from '../../../utils/constants';
 import { googleProvider } from '../../../utils/services/authProviders';
-import { socialMediaAuth } from '../../../utils/services/auth';
+import { login } from '../../../redux/actions/auth/auth';
 
 export default function LoginModal(props) {
   const { show, handleClose, openEmailModal } = props;
-
-  const handleOnClick = async (provider) => {
-    const { user } = await socialMediaAuth(provider);
-    console.log(user);
-    handleClose();
-  };
+  const dispatch = useDispatch();
 
   return (
     <Modal show={show} onHide={handleClose}>
@@ -36,7 +32,7 @@ export default function LoginModal(props) {
         <div className='modal-buttons'>
           <button
             className='modal-login-btn'
-            onClick={() => handleOnClick(googleProvider)}
+            onClick={() => dispatch(login(googleProvider))}
           >
             <img
               src={GOOGLE_LOGIN_ICON}
