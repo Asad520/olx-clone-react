@@ -6,7 +6,7 @@ export default function AdsCarousel({ posts }) {
     let carouselItems = [];
     for (let i = 0; i < 4; i += 3) {
       carouselItems.push(
-        <div className='carousel-item'>
+        <div className='carousel-item' key={i}>
           <div className='carousel-cards'>
             <CarouselCard post={posts[i + 3]} />
             <CarouselCard post={posts[i + 4]} />

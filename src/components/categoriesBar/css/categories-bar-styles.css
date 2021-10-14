@@ -13,7 +13,7 @@
 }
 
 .categories-bar {
-  margin: 5px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -30,12 +30,13 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0;
+  padding: 0;
 }
 
 .nav-item {
   font-size: 14px;
   color: #002f34;
-  padding-left: 17px;
+  margin: 0px 9px;
   text-decoration: none;
 }
 

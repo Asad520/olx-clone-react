@@ -1,7 +1,6 @@
 import '../css/product-details-styles.css';
 
-export default function ProductDetails({ product }) {
-  const { price, type, descr } = product;
+export default function ProductDetails({ price, type, descr }) {
   return (
     <>
       <div className='product-details-container'>

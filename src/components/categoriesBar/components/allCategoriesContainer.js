@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
 export default styled.div`
-  ${(props) =>
-    props.width >= 768
+  ${({ width }) =>
+    width >= 768
       ? css`
           width: 65%;
           max-height: none;

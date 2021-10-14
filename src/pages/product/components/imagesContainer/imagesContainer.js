@@ -1,9 +1,7 @@
 import '../css/images-container-styles.css';
 import { LEFT_ARROW, RIGHT_ARROW } from '../../../../utils/constants';
 
-export default function ImagesContainer({ product }) {
-  const { productImages, featured, img } = product;
-
+export default function ImagesContainer({ productImages, featured, img }) {
   const renderImages = () => {
     return productImages.map((image, index) => {
       return (

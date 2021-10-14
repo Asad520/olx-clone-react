@@ -19,7 +19,18 @@ export default function Product() {
     document.title = product.descr;
   }, [product.descr]);
 
-  const { seller } = product;
+  const {
+    seller,
+    productImages,
+    featured,
+    img,
+    price,
+    type,
+    descr,
+    location,
+    timeStamp,
+    id,
+  } = product;
 
   return (
     <>
@@ -28,15 +39,24 @@ export default function Product() {
       <Container>
         <Row>
           <Col md={8}>
-            <ImagesContainer product={product} />
-            <ProductDetails product={product} />
+            <ImagesContainer
+              productImages={productImages}
+              img={img}
+              featured={featured}
+            />
+            <ProductDetails price={price} type={type} descr={descr} />
             <AdsCarousel posts={POSTS} />
           </Col>
 
           <Col md={4}>
-            <PriceContainer product={product} />
+            <PriceContainer
+              price={price}
+              descr={descr}
+              location={location}
+              timeStamp={timeStamp}
+            />
             <SellerDescription seller={seller} />
-            <SellerLocation product={product} />
+            <SellerLocation location={location} id={id} />
           </Col>
         </Row>
       </Container>

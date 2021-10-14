@@ -23,11 +23,11 @@ import {
 import { logout } from '../../../redux/actions/auth/auth';
 
 export default function HeaderButtons() {
-  const dispatch = useDispatch();
   const [loginModal, setLoginModal] = useState(false);
   const [emailModal, setEmailModal] = useState(false);
   const [passwordModal, setPasswordModal] = useState(false);
 
+  const dispatch = useDispatch();
   const user = useSelector((state) => state.auth.user);
 
   const renderLogin = () => {

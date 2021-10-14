@@ -1,8 +1,7 @@
 import '../css/seller-location-styles.css';
 import { RIGHT_ARROW } from '../../../../utils/constants';
 
-export default function SellerLocation({ product }) {
-  const { location, id } = product;
+export default function SellerLocation({ location, id }) {
   return (
     <>
       <div className='product-info-container mt-5'>

@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
 export default styled.div`
-  ${(props) =>
-    props.width < 370
+  ${({ width }) =>
+    width < 370
       ? css`
           width: 14em;
         `

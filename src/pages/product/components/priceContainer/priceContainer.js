@@ -1,8 +1,7 @@
 import '../css/price-container-styles.css';
 import { FAVOURITES_ICON, SHARE_ICON } from '../../../../utils/constants';
 
-export default function PriceContainer({ product }) {
-  const { price, descr, location, timeStamp } = product;
+export default function PriceContainer({ price, descr, location, timeStamp }) {
   return (
     <>
       <div className='product-info-container'>

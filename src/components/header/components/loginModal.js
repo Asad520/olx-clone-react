@@ -1,4 +1,5 @@
-import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Modal } from 'react-bootstrap';
 import './css/modal-styles.css';
 import {
@@ -10,8 +11,6 @@ import {
 } from '../../../utils/constants';
 import { googleProvider } from '../../../utils/services/authProviders';
 import { login } from '../../../redux/actions/auth/auth';
-import { useSelector } from 'react-redux';
-import { useEffect } from 'react';
 
 export default function LoginModal(props) {
   const { show, handleClose, openEmailModal } = props;
@@ -48,6 +47,7 @@ export default function LoginModal(props) {
               alt='Google Login Icon'
               className='login-logo'
             />
+
             <span className='login-text'>Continue with Google</span>
           </button>
           <button className='modal-login-btn'>

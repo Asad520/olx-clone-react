@@ -7,6 +7,7 @@ export default function PasswordModal(props) {
   const { show, handleClose } = props;
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+
   return (
     <Modal show={show} onHide={handleClose}>
       <button
