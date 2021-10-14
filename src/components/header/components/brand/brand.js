@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { OLX_LOGO } from '../../../utils/constants';
+import { OLX_LOGO } from '../../../../utils/constants';
 
 export default function brand() {
   return (

@@ -1,4 +1,4 @@
-import '../css/banner-styles.css';
+import './style.css';
 import { BANNER_IMG } from '../../../../utils/constants';
 import { Container } from 'react-bootstrap';
 

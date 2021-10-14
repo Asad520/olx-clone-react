@@ -1,4 +1,4 @@
-import '../css/seller-location-styles.css';
+import './style.css';
 import { RIGHT_ARROW } from '../../../../utils/constants';
 
 export default function SellerLocation({ location, id }) {

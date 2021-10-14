@@ -1,4 +1,4 @@
-import '../css/bottom-banner-styles.css';
+import './style.css';
 import {
   BOTTOM_BANNER_IMG,
   APPSTORE_ICON,

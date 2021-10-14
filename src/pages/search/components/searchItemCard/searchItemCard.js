@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../css/list-card-styles.css';
+import './style.css';
 import { FAVOURITES_ICON } from '../../../../utils/constants';
 
 export default function SearchItemCard({ product }) {

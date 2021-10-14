@@ -4,10 +4,10 @@ import {
   SEARCH_SVG,
   LOCATION_MARKER_ICON,
   CURRENT_LOCATION_ICON,
-} from '../../../utils/constants';
-import { SEARCH_LOCATIONS } from '../../../utils/data';
+} from '../../../../utils/constants';
 import { Col } from 'react-bootstrap';
-import './css/location-search-styles.css';
+import { SEARCH_LOCATIONS } from '../../../../utils/data';
+import './style.css';
 
 export default function LocationSearch() {
   const [location, setLocation] = useState('Pakistan');

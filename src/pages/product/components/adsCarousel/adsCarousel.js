@@ -1,5 +1,5 @@
-import CarouselCard from './components/carouselCard';
-import '../css/ads-carousel-styles.css';
+import CarouselCard from './components/carouselCard/carouselCard';
+import './style.css';
 
 export default function AdsCarousel({ posts }) {
   const renderCarouselItems = () => {

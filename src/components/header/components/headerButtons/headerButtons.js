@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import SELL_IMAGE from '../../../assets/images/sell.png';
-import './css/header-buttons-styles.css';
+import SELL_IMAGE from '../../../../assets/images/sell.png';
+import './style.css';
 import { Col } from 'react-bootstrap';
-import LoginModal from './loginModal';
-import EmailModal from './emailModal';
-import PasswordModal from './passwordModal';
-import DropdownContainer from './dropdown-container';
+import LoginModal from '../modals/loginModal/loginModal';
+import EmailModal from '../modals/emailModal/emailModal';
+import PasswordModal from '../modals/passwordModal/passwordModal';
+import { DropdownContainer } from './styledComponents';
 
 import {
   BILLING_ICON,
@@ -19,8 +19,8 @@ import {
   MY_ADS_ICON,
   NOTIFICATIONS_ICON,
   SETTINGS_ICON,
-} from '../../../utils/constants';
-import { logout } from '../../../redux/actions/auth/auth';
+} from '../../../../utils/constants';
+import { logout } from '../../../../redux/actions/auth/auth';
 
 export default function HeaderButtons() {
   const [loginModal, setLoginModal] = useState(false);

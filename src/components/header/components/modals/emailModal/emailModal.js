@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
-import { BACK_ICON, MODAL_OLX_LOGO } from '../../../utils/constants';
-import './css/modal-styles.css';
+import { BACK_ICON, MODAL_OLX_LOGO } from '../../../../../utils/constants';
+import '../style.css';
 
 export default function EmailModal(props) {
   const [email, setEmail] = useState('');

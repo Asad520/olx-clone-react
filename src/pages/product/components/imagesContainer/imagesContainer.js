@@ -1,4 +1,4 @@
-import '../css/images-container-styles.css';
+import './style.css';
 import { LEFT_ARROW, RIGHT_ARROW } from '../../../../utils/constants';
 
 export default function ImagesContainer({ productImages, featured, img }) {

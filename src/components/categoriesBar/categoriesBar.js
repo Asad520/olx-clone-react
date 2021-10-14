@@ -1,7 +1,6 @@
 import { Col } from 'react-bootstrap';
-import './css/categories-bar-styles.css';
-import CategoriesContainer from './components/allCategoriesContainer';
-import CategoriesSection from './components/categoriesSection';
+import './style.css';
+import { CategoriesContainer, CategoriesSection } from './styled-components';
 import { ALL_CATEGORIES, MAIN_CATEGORIES } from '../../utils/data';
 import { MAIN_CATEGORY, DOWN_ARROW } from '../../utils/constants';
 

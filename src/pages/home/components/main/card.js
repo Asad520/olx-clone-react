@@ -1,6 +1,6 @@
-import { FAVOURITES_ICON } from '../../../../utils/constants';
-import '../css/home-card-styles.css';
 import { Link } from 'react-router-dom';
+import { FAVOURITES_ICON } from '../../../../utils/constants';
+import './style.css';
 
 export default function card({ post }) {
   const { featured, img, descr, price, location, timeStamp, id } = post;

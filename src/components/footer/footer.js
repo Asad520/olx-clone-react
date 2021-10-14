@@ -12,7 +12,7 @@ import {
   APPSTORE_ICON,
   PLAYSTORE_ICON,
 } from '../../utils/constants';
-import './css/footer-styles.css';
+import './style.css';
 import { Col } from 'react-bootstrap';
 
 export default function Footer() {

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
-import { MODAL_OLX_LOGO } from '../../../utils/constants';
-import './css/modal-styles.css';
+import { MODAL_OLX_LOGO } from '../../../../../utils/constants';
+import '../style.css';
 
 export default function PasswordModal(props) {
   const { show, handleClose } = props;

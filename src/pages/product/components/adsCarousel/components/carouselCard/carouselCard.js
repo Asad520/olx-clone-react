@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import '../../css/carousel-card-styles.css';
-import { FAVOURITES_ICON } from '../../../../../utils/constants';
+import './style.css';
+import { FAVOURITES_ICON } from '../../../../../../utils/constants';
 
 export default function CarouselCard({ post }) {
   const { price, descr, location, timeStamp, img, id } = post;

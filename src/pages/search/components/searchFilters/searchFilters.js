@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../css/search-filters-styles.css';
+import './style.css';
 import {
   FILTER_CATEGORIES,
   FILTER_COMPANIES,

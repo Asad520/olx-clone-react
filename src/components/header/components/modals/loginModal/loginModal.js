@@ -1,16 +1,16 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Modal } from 'react-bootstrap';
-import './css/modal-styles.css';
+import '../style.css';
 import {
   MODAL_OLX_LOGO,
   EMAIL_LOGIN_ICON,
   FACEBOOK_LOGIN_ICON,
   GOOGLE_LOGIN_ICON,
   PHONE_LOGIN_ICON,
-} from '../../../utils/constants';
-import { googleProvider } from '../../../utils/services/authProviders';
-import { login } from '../../../redux/actions/auth/auth';
+} from '../../../../../utils/constants';
+import { googleProvider } from '../../../../../utils/services/authProviders';
+import { login } from '../../../../../redux/actions/auth/auth';
 
 export default function LoginModal(props) {
   const { show, handleClose, openEmailModal } = props;

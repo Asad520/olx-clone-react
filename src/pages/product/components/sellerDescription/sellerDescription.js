@@ -1,4 +1,4 @@
-import '../css/seller-description-styles.css';
+import './style.css';
 import {
   PROFILE_PIC_ICON,
   MEMBER_ARROW,
