@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Modal } from 'react-bootstrap';
 import '../style.css';
+import { propTypes } from './props';
 import {
   MODAL_OLX_LOGO,
   EMAIL_LOGIN_ICON,
@@ -12,8 +13,7 @@ import {
 import { googleProvider } from '../../../../../utils/services/authProviders';
 import { login } from '../../../../../redux/actions/auth/auth';
 
-export default function LoginModal(props) {
-  const { show, handleClose, openEmailModal } = props;
+export default function LoginModal({ show, handleClose, openEmailModal }) {
   const user = useSelector((state) => state.auth.user);
 
   const dispatch = useDispatch();
@@ -87,3 +87,5 @@ export default function LoginModal(props) {
     </Modal>
   );
 }
+
+LoginModal.propTypes = propTypes;

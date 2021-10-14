@@ -55,7 +55,10 @@ export default function Product() {
               location={location}
               timeStamp={timeStamp}
             />
-            <SellerDescription seller={seller} />
+            <SellerDescription
+              name={seller.name}
+              memberSince={seller.memberSince}
+            />
             <SellerLocation location={location} id={id} />
           </Col>
         </Row>

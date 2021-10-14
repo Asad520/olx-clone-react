@@ -1,5 +1,6 @@
 import './style.css';
 import { LEFT_ARROW, RIGHT_ARROW } from '../../../../utils/constants';
+import { propTypes } from './props';
 
 export default function ImagesContainer({ productImages, featured, img }) {
   const renderImages = () => {
@@ -53,3 +54,5 @@ export default function ImagesContainer({ productImages, featured, img }) {
     </div>
   );
 }
+
+ImagesContainer.propTypes = propTypes;

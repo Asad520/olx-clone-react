@@ -1,9 +1,17 @@
 import { Link } from 'react-router-dom';
 import { FAVOURITES_ICON } from '../../../../utils/constants';
 import './style.css';
+import { propTypes } from './props';
 
-export default function card({ post }) {
-  const { featured, img, descr, price, location, timeStamp, id } = post;
+export default function Card({
+  featured,
+  img,
+  descr,
+  price,
+  location,
+  timeStamp,
+  id,
+}) {
   return (
     <div className='card'>
       <Link to={`/product/${id}`} className='card-link'>
@@ -21,7 +29,7 @@ export default function card({ post }) {
               aria-label='Cover photo'
               data-src={img}
               className='card-img lazy loaded'
-              src={post.img}
+              src={img}
             />
             <img
               src={FAVOURITES_ICON}
@@ -48,3 +56,5 @@ export default function card({ post }) {
     </div>
   );
 }
+
+Card.propTypes = propTypes;

@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
 import './style.css';
+import { propTypes } from './props';
 import { FAVOURITES_ICON } from '../../../../../../utils/constants';
 
-export default function CarouselCard({ post }) {
-  const { price, descr, location, timeStamp, img, id } = post;
+export default function CarouselCard({
+  price,
+  descr,
+  location,
+  timeStamp,
+  img,
+  id,
+}) {
   const locationText =
     location.length > 12 ? location.slice(0, 12) + '...' : location;
   return (
@@ -35,3 +42,5 @@ export default function CarouselCard({ post }) {
     </Link>
   );
 }
+
+CarouselCard.propTypes = propTypes;

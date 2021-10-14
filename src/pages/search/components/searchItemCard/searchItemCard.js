@@ -1,9 +1,17 @@
 import { Link } from 'react-router-dom';
 import './style.css';
+import { propTypes } from './props';
 import { FAVOURITES_ICON } from '../../../../utils/constants';
 
-export default function SearchItemCard({ product }) {
-  const { descr, location, timeStamp, price, img, featured, id } = product;
+export default function SearchItemCard({
+  descr,
+  location,
+  timeStamp,
+  price,
+  img,
+  featured,
+  id,
+}) {
   return (
     <Link to={`/product/${id}`} className='list-card'>
       <div className='list-img-container'>
@@ -48,3 +56,5 @@ export default function SearchItemCard({ product }) {
     </Link>
   );
 }
+
+SearchItemCard.propTypes = propTypes;

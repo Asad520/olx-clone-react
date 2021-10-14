@@ -1,12 +1,12 @@
 import './style.css';
+import { propTypes } from './props';
 import {
   PROFILE_PIC_ICON,
   MEMBER_ARROW,
   PHONE_ICON,
 } from '../../../../utils/constants';
 
-export default function SellerDescription({ seller }) {
-  const { name, memberSince } = seller;
+export default function SellerDescription({ name, memberSince }) {
   return (
     <>
       <div className='product-info-container mt-2'>
@@ -40,3 +40,5 @@ export default function SellerDescription({ seller }) {
     </>
   );
 }
+
+SellerDescription.propTypes = propTypes;

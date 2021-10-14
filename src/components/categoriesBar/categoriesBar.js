@@ -1,5 +1,6 @@
 import { Col } from 'react-bootstrap';
 import './style.css';
+import { defaultProps } from './props';
 import { CategoriesContainer, CategoriesSection } from './styled-components';
 import { ALL_CATEGORIES, MAIN_CATEGORIES } from '../../utils/data';
 import { MAIN_CATEGORY, DOWN_ARROW } from '../../utils/constants';
@@ -85,3 +86,5 @@ export default function CategoriesBar({ shadow }) {
     </CategoriesSection>
   );
 }
+
+CategoriesBar.defaultProps = defaultProps;

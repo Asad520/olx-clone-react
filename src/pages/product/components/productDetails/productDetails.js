@@ -1,4 +1,5 @@
 import './style.css';
+import { propTypes } from './props';
 
 export default function ProductDetails({ price, type, descr }) {
   return (
@@ -21,3 +22,5 @@ export default function ProductDetails({ price, type, descr }) {
     </>
   );
 }
+
+ProductDetails.propTypes = propTypes;

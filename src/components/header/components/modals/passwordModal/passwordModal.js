@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import { MODAL_OLX_LOGO } from '../../../../../utils/constants';
 import '../style.css';
+import { propTypes } from './props';
 
-export default function PasswordModal(props) {
-  const { show, handleClose } = props;
+export default function PasswordModal({ show, handleClose }) {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
@@ -52,3 +52,5 @@ export default function PasswordModal(props) {
     </Modal>
   );
 }
+
+PasswordModal.propTypes = propTypes;

@@ -1,4 +1,5 @@
 import './style.css';
+import { propTypes } from './props';
 
 export default function PopularSearches({ popularSearches }) {
   const renderPopularSearches = () => {
@@ -33,3 +34,5 @@ export default function PopularSearches({ popularSearches }) {
     </>
   );
 }
+
+PopularSearches.propTypes = propTypes;

@@ -17,9 +17,21 @@ export default function Search() {
   }, [query]);
 
   const renderProducts = () => {
-    return POSTS.map((product) => (
-      <SearchItemCard key={product.id} product={product} />
-    ));
+    return POSTS.map((product) => {
+      const { featured, img, descr, price, location, timeStamp, id } = product;
+      return (
+        <SearchItemCard
+          key={product.id}
+          featured={featured}
+          img={img}
+          descr={descr}
+          price={price}
+          location={location}
+          timeStamp={timeStamp}
+          id={id}
+        />
+      );
+    });
   };
 
   return (

@@ -1,5 +1,6 @@
 import CarouselCard from './components/carouselCard/carouselCard';
 import './style.css';
+import { propTypes } from './props';
 
 export default function AdsCarousel({ posts }) {
   const renderCarouselItems = () => {
@@ -8,9 +9,30 @@ export default function AdsCarousel({ posts }) {
       carouselItems.push(
         <div className='carousel-item' key={i}>
           <div className='carousel-cards'>
-            <CarouselCard post={posts[i + 3]} />
-            <CarouselCard post={posts[i + 4]} />
-            <CarouselCard post={posts[i + 5]} />
+            <CarouselCard
+              price={posts[i + 3].price}
+              descr={posts[i + 3].descr}
+              location={posts[i + 3].location}
+              timeStamp={posts[i + 3].timeStamp}
+              img={posts[i + 3].img}
+              id={posts[i + 3].id}
+            />
+            <CarouselCard
+              price={posts[i + 4].price}
+              descr={posts[i + 4].descr}
+              location={posts[i + 4].location}
+              timeStamp={posts[i + 4].timeStamp}
+              img={posts[i + 4].img}
+              id={posts[i + 4].id}
+            />
+            <CarouselCard
+              price={posts[i + 5].price}
+              descr={posts[i + 5].descr}
+              location={posts[i + 5].location}
+              timeStamp={posts[i + 5].timeStamp}
+              img={posts[i + 5].img}
+              id={posts[i + 5].id}
+            />
           </div>
         </div>
       );
@@ -31,9 +53,30 @@ export default function AdsCarousel({ posts }) {
           <div className='carousel-inner'>
             <div className='carousel-item active'>
               <div className='carousel-cards'>
-                <CarouselCard post={posts[0]} />
-                <CarouselCard post={posts[1]} />
-                <CarouselCard post={posts[2]} />
+                <CarouselCard
+                  price={posts[0].price}
+                  descr={posts[0].descr}
+                  location={posts[0].location}
+                  timeStamp={posts[0].timeStamp}
+                  img={posts[0].img}
+                  id={posts[0].id}
+                />
+                <CarouselCard
+                  price={posts[1].price}
+                  descr={posts[1].descr}
+                  location={posts[1].location}
+                  timeStamp={posts[1].timeStamp}
+                  img={posts[1].img}
+                  id={posts[1].id}
+                />
+                <CarouselCard
+                  price={posts[2].price}
+                  descr={posts[2].descr}
+                  location={posts[2].location}
+                  timeStamp={posts[2].timeStamp}
+                  img={posts[2].img}
+                  id={posts[2].id}
+                />
               </div>
             </div>
             {renderCarouselItems()}
@@ -67,3 +110,5 @@ export default function AdsCarousel({ posts }) {
     </>
   );
 }
+
+AdsCarousel.propTypes = propTypes;
