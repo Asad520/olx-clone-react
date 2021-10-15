@@ -1,6 +1,6 @@
 import './style.css';
 import { FAVOURITES_ICON, SHARE_ICON } from '../../../../utils/constants';
-import { propTypes } from './props';
+import { propTypes, defaultProps } from './props';
 
 export default function PriceContainer({ price, descr, location, timeStamp }) {
   return (
@@ -30,3 +30,4 @@ export default function PriceContainer({ price, descr, location, timeStamp }) {
 }
 
 PriceContainer.propTypes = propTypes;
+PriceContainer.defaultProps = defaultProps;

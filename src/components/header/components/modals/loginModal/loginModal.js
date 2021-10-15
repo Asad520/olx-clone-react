@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Modal } from 'react-bootstrap';
 import '../style.css';
-import { propTypes } from './props';
+import { propTypes, defaultProps } from './props';
 import {
   MODAL_OLX_LOGO,
   EMAIL_LOGIN_ICON,
@@ -89,3 +89,4 @@ export default function LoginModal({ show, handleClose, openEmailModal }) {
 }
 
 LoginModal.propTypes = propTypes;
+LoginModal.defaultProps = defaultProps;

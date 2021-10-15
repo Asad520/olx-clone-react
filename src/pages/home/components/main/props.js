@@ -9,3 +9,5 @@ export const propTypes = {
   timeStamp: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
 };
+
+export const defaultProps = {};

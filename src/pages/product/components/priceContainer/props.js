@@ -6,3 +6,5 @@ export const propTypes = {
   location: PropTypes.string.isRequired,
   timeStamp: PropTypes.string.isRequired,
 };
+
+export const defaultProps = {};

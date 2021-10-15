@@ -5,3 +5,5 @@ export const propTypes = {
   type: PropTypes.string.isRequired,
   descr: PropTypes.string.isRequired,
 };
+
+export const defaultProps = {};

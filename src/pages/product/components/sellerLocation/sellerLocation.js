@@ -1,5 +1,5 @@
 import './style.css';
-import { propTypes } from './props';
+import { propTypes, defaultProps } from './props';
 import { RIGHT_ARROW } from '../../../../utils/constants';
 
 export default function SellerLocation({ location, id }) {
@@ -37,3 +37,4 @@ export default function SellerLocation({ location, id }) {
 }
 
 SellerLocation.propTypes = propTypes;
+SellerLocation.defaultProps = defaultProps;

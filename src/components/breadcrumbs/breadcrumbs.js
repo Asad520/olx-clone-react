@@ -1,6 +1,6 @@
 import { Container, Row } from 'react-bootstrap';
 import './style.css';
-import { propTypes } from './props';
+import { propTypes, defaultProps } from './props';
 
 export default function Breadcrumbs({ breadcrumbs }) {
   const renderBreadcrumbs = () => {
@@ -27,3 +27,4 @@ export default function Breadcrumbs({ breadcrumbs }) {
 }
 
 Breadcrumbs.propTypes = propTypes;
+Breadcrumbs.defaultProps = defaultProps;

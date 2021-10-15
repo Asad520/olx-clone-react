@@ -5,3 +5,5 @@ export const propTypes = {
   handleClose: PropTypes.func.isRequired,
   openEmailModal: PropTypes.func.isRequired,
 };
+
+export const defaultProps = {};

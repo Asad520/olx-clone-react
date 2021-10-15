@@ -1,6 +1,6 @@
 import CarouselCard from './components/carouselCard/carouselCard';
 import './style.css';
-import { propTypes } from './props';
+import { propTypes, defaultProps } from './props';
 
 export default function AdsCarousel({ posts }) {
   const renderCarouselItems = () => {
@@ -112,3 +112,4 @@ export default function AdsCarousel({ posts }) {
 }
 
 AdsCarousel.propTypes = propTypes;
+AdsCarousel.defaultProps = defaultProps;

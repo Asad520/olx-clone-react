@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import { BACK_ICON, MODAL_OLX_LOGO } from '../../../../../utils/constants';
 import '../style.css';
-import { propTypes } from './props';
+import { propTypes, defaultProps } from './props';
 
 export default function EmailModal({ show, handleClose, openPasswordModal }) {
   const [email, setEmail] = useState('');
@@ -58,3 +58,4 @@ export default function EmailModal({ show, handleClose, openPasswordModal }) {
 }
 
 EmailModal.propTypes = propTypes;
+EmailModal.defaultProps = defaultProps;

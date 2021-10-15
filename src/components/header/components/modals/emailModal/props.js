@@ -5,3 +5,5 @@ export const propTypes = {
   handleClose: PropTypes.func.isRequired,
   openPasswordModal: PropTypes.func.isRequired,
 };
+
+export const defaultProps = {};

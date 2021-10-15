@@ -5,3 +5,5 @@ export const propTypes = {
   img: PropTypes.string.isRequired,
   productImages: PropTypes.array.isRequired,
 };
+
+export const defaultProps = {};

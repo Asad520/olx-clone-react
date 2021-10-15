@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FAVOURITES_ICON } from '../../../../utils/constants';
 import './style.css';
-import { propTypes } from './props';
+import { propTypes, defaultProps } from './props';
 
 export default function Card({
   featured,
@@ -58,3 +58,4 @@ export default function Card({
 }
 
 Card.propTypes = propTypes;
+Card.defdefaultProps = defaultProps;

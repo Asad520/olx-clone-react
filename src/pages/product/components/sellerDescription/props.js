@@ -4,3 +4,5 @@ export const propTypes = {
   name: PropTypes.string.isRequired,
   memberSince: PropTypes.string.isRequired,
 };
+
+export const defaultProps = {};

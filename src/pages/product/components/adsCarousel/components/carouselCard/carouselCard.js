@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './style.css';
-import { propTypes } from './props';
+import { propTypes, defaultProps } from './props';
 import { FAVOURITES_ICON } from '../../../../../../utils/constants';
 
 export default function CarouselCard({
@@ -44,3 +44,4 @@ export default function CarouselCard({
 }
 
 CarouselCard.propTypes = propTypes;
+CarouselCard.defaultProps = defaultProps;

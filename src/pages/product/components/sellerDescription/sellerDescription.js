@@ -1,5 +1,5 @@
 import './style.css';
-import { propTypes } from './props';
+import { propTypes, defaultProps } from './props';
 import {
   PROFILE_PIC_ICON,
   MEMBER_ARROW,
@@ -42,3 +42,4 @@ export default function SellerDescription({ name, memberSince }) {
 }
 
 SellerDescription.propTypes = propTypes;
+SellerDescription.defaultProps = defaultProps;
