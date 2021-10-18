@@ -1,12 +1,12 @@
-import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import { MODAL_OLX_LOGO } from '../../../../../utils/constants';
 import '../style.css';
+import usePasswordModal from './controller';
 import { propTypes, defaultProps } from './props';
 
 export default function PasswordModal({ show, handleClose }) {
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [password, setPassword, confirmPassword, setConfirmPassword] =
+    usePasswordModal();
 
   return (
     <Modal show={show} onHide={handleClose}>

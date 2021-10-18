@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import { useParams } from 'react-router';
 import { Col, Container, Row } from 'react-bootstrap';
 import { POPULAR_SEARCHES, SEARCH_BREADCRUMBS, POSTS } from '../../utils/data';
 import CategoriesBar from '../../components/categoriesBar/categoriesBar';
@@ -7,33 +5,10 @@ import Breadcrumbs from '../../components/breadcrumbs/breadcrumbs';
 import PopularSearches from './components/popularSearches/popularSearches';
 import SearchFilters from './components/searchFilters/searchFilters';
 import SortBar from './components/sortBar/sortBar';
-import SearchItemCard from './components/searchItemCard/searchItemCard';
+import useSearch from './controller';
 
 export default function Search() {
-  const { query } = useParams();
-
-  useEffect(() => {
-    document.title = query;
-  }, [query]);
-
-  const renderProducts = () => {
-    return POSTS.map((product) => {
-      const { featured, img, descr, price, location, timeStamp, id } = product;
-      return (
-        <SearchItemCard
-          key={product.id}
-          featured={featured}
-          img={img}
-          descr={descr}
-          price={price}
-          location={location}
-          timeStamp={timeStamp}
-          id={id}
-        />
-      );
-    });
-  };
-
+  const [query, renderProducts] = useSearch();
   return (
     <>
       <CategoriesBar />
@@ -47,7 +22,7 @@ export default function Search() {
           </Col>
           <Col md={9}>
             <SortBar />
-            {renderProducts()}
+            {renderProducts(POSTS)}
           </Col>
         </Row>
       </Container>

@@ -1,8 +1,11 @@
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 
 export const propTypes = {
-  name: PropTypes.string.isRequired,
-  memberSince: PropTypes.string.isRequired,
+  // seller name
+  name: string.isRequired,
+
+  // joining date of seller
+  memberSince: string.isRequired,
 };
 
 export const defaultProps = {};

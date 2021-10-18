@@ -1,11 +1,12 @@
 import './style.css';
+import { defaultProps, propTypes } from './props';
 import {
   BOTTOM_BANNER_IMG,
   APPSTORE_ICON,
   PLAYSTORE_ICON,
 } from '../../../../utils/constants';
 
-export default function bottomBanner() {
+export default function BottomBanner() {
   return (
     <section className='bottom-banner'>
       <div>
@@ -43,3 +44,6 @@ export default function bottomBanner() {
     </section>
   );
 }
+
+BottomBanner.propTypes = propTypes;
+BottomBanner.defaultProps = defaultProps;

@@ -1,20 +1,8 @@
 import './style.css';
 import { propTypes, defaultProps } from './props';
+import { renderPopularSearches } from './controller';
 
 export default function PopularSearches({ popularSearches }) {
-  const renderPopularSearches = () => {
-    return popularSearches.map((item, index) => {
-      return (
-        <li key={item.id}>
-          <span className='popular-item'>{item.name}</span>
-          {index !== popularSearches.length - 1 && (
-            <span className='popular-item'>-</span>
-          )}
-        </li>
-      );
-    });
-  };
-
   return (
     <>
       <section className='popular-searches'>
@@ -27,7 +15,7 @@ export default function PopularSearches({ popularSearches }) {
         >
           Popular Searches:
           <ul className='popular-list justify-content-lg-start '>
-            {renderPopularSearches()}
+            {renderPopularSearches(popularSearches)}
           </ul>
         </div>
       </section>

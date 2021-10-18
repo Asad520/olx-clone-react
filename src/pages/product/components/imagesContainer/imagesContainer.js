@@ -1,26 +1,9 @@
 import './style.css';
 import { LEFT_ARROW, RIGHT_ARROW } from '../../../../utils/constants';
 import { propTypes, defaultProps } from './props';
+import { renderImages } from './controller';
 
 export default function ImagesContainer({ productImages, featured, img }) {
-  const renderImages = () => {
-    return productImages.map((image, index) => {
-      return (
-        <button className='small-image' key={index}>
-          <picture>
-            <source type='image/webp' srcSet={image} />
-            <img
-              title='Husky puppies 0'
-              src={image}
-              alt='Product img icon'
-              className='image-icon'
-            />
-          </picture>
-        </button>
-      );
-    });
-  };
-
   return (
     <div className='images-container'>
       <div className='main-img'>
@@ -50,7 +33,7 @@ export default function ImagesContainer({ productImages, featured, img }) {
         </picture>
       </div>
 
-      <div className='more-images-container'>{renderImages()}</div>
+      <div className='more-images-container'>{renderImages(productImages)}</div>
     </div>
   );
 }

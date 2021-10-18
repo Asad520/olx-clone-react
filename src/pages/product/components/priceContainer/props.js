@@ -1,10 +1,17 @@
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 
 export const propTypes = {
-  price: PropTypes.string.isRequired,
-  descr: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  timeStamp: PropTypes.string.isRequired,
+  // product price
+  price: string.isRequired,
+
+  // ad description
+  descr: string.isRequired,
+
+  // product selling location
+  location: string.isRequired,
+
+  // timestamp when ad was posted
+  timeStamp: string.isRequired,
 };
 
 export const defaultProps = {};

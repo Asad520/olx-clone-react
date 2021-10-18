@@ -1,29 +1,15 @@
-import { useState } from 'react';
-import {
-  DOWN_ARROW,
-  SEARCH_SVG,
-  LOCATION_MARKER_ICON,
-  CURRENT_LOCATION_ICON,
-} from '../../../../utils/constants';
+import { propTypes, defaultProps } from './props';
+import { DOWN_ARROW, CURRENT_LOCATION_ICON } from '../../../../utils/constants';
 import { Col } from 'react-bootstrap';
 import { SEARCH_LOCATIONS } from '../../../../utils/data';
 import './style.css';
+import SearchIcon from './components/searchIcon';
+import useLocationSearch from './controller';
 
 export default function LocationSearch() {
-  const [location, setLocation] = useState('Pakistan');
+  const [location, setLocation, renderLocations] =
+    useLocationSearch(SEARCH_LOCATIONS);
 
-  const renderLocations = () => {
-    return SEARCH_LOCATIONS.map((location) => {
-      return (
-        <li key={location.id}>
-          <div className='location-item'>
-            <img src={LOCATION_MARKER_ICON} alt='Current location icon' />
-            <span className='location-item-text'>{location.location}</span>
-          </div>
-        </li>
-      );
-    });
-  };
   return (
     <Col className='dropdown' lg={3} md={12}>
       <div
@@ -33,9 +19,7 @@ export default function LocationSearch() {
         aria-expanded='false'
       >
         <div className='d-flex'>
-          <svg width='25' height='25' viewBox='0 0 1024 1024'>
-            <path d={SEARCH_SVG}></path>
-          </svg>
+          <SearchIcon />
           <input
             className='search'
             type='text'
@@ -63,3 +47,6 @@ export default function LocationSearch() {
     </Col>
   );
 }
+
+LocationSearch.propTypes = propTypes;
+LocationSearch.defaultProps = defaultProps;

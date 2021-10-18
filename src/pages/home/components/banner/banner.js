@@ -1,8 +1,9 @@
 import './style.css';
+import { defaultProps, propTypes } from './props';
 import { BANNER_IMG } from '../../../../utils/constants';
 import { Container } from 'react-bootstrap';
 
-export default function banner() {
+export default function Banner() {
   return (
     <section className='banner-img'>
       <img src={BANNER_IMG} alt='OLX Banner' className='banner' />
@@ -12,3 +13,6 @@ export default function banner() {
     </section>
   );
 }
+
+Banner.propTypes = propTypes;
+Banner.defaultProps = defaultProps;

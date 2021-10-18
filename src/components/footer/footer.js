@@ -1,3 +1,5 @@
+import './style.css';
+import { defaultProps, propTypes } from './props';
 import {
   POPULAR_CATEGORIES,
   TRENDING_SEARCHES,
@@ -12,20 +14,11 @@ import {
   APPSTORE_ICON,
   PLAYSTORE_ICON,
 } from '../../utils/constants';
-import './style.css';
 import { Col } from 'react-bootstrap';
+import useFooter from './controller';
 
 export default function Footer() {
-  const renderFooterCategories = (data) => {
-    return data.map((category) => {
-      return (
-        <div key={category.id} className='footer-category'>
-          {category.name}
-        </div>
-      );
-    });
-  };
-
+  const [renderFooterCategories] = useFooter();
   return (
     <footer>
       <section className='footer-section'>
@@ -117,3 +110,6 @@ export default function Footer() {
     </footer>
   );
 }
+
+Footer.propTypes = propTypes;
+Footer.defaultProps = defaultProps;

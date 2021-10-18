@@ -1,9 +1,14 @@
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 
 export const propTypes = {
-  price: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  descr: PropTypes.string.isRequired,
+  //  product price
+  price: string.isRequired,
+
+  // product category type
+  type: string,
+
+  // ad descr
+  descr: string.isRequired,
 };
 
 export const defaultProps = {};

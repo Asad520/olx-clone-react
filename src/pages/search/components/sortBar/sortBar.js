@@ -1,4 +1,5 @@
 import './style.css';
+import { propTypes, defaultProps } from './props';
 import {
   DOWN_ARROW,
   LIST_VIEW_ICON,
@@ -76,3 +77,6 @@ export default function SortBar() {
     </>
   );
 }
+
+SortBar.propTypes = propTypes;
+SortBar.defaultProps = defaultProps;

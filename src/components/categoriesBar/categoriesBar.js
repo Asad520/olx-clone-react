@@ -2,23 +2,11 @@ import { Col } from 'react-bootstrap';
 import './style.css';
 import { defaultProps, propTypes } from './props';
 import { CategoriesContainer, CategoriesSection } from './styled-components';
-import { ALL_CATEGORIES, MAIN_CATEGORIES } from '../../utils/data';
 import { MAIN_CATEGORY, DOWN_ARROW } from '../../utils/constants';
+import useCategoriesBar from './controller';
 
 export default function CategoriesBar({ shadow }) {
-  const renderCategories = (type) => {
-    const categories =
-      type === MAIN_CATEGORY ? MAIN_CATEGORIES : ALL_CATEGORIES;
-    return categories.map((category) => {
-      return (
-        <li className='category-item' key={category.id}>
-          <div className={type === MAIN_CATEGORY ? 'nav-item' : 'list-items'}>
-            {category.name}
-          </div>
-        </li>
-      );
-    });
-  };
+  const [renderCategories] = useCategoriesBar();
 
   return (
     <CategoriesSection shadow={shadow}>
@@ -87,5 +75,5 @@ export default function CategoriesBar({ shadow }) {
   );
 }
 
-CategoriesBar.defaultProps = defaultProps;
+CategoriesBar.defaultProps = propTypes;
 CategoriesBar.defaultProps = defaultProps;

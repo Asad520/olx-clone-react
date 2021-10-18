@@ -1,9 +1,14 @@
-import PropTypes from 'prop-types';
+import { bool, func } from 'prop-types';
 
 export const propTypes = {
-  show: PropTypes.bool.isRequired,
-  handleClose: PropTypes.func.isRequired,
-  openPasswordModal: PropTypes.func.isRequired,
+  // boolean to display and hide email modal
+  show: bool.isRequired,
+
+  // function to close modal when clicked offscreen
+  handleClose: func.isRequired,
+
+  // function to open password modal
+  openPasswordModal: func.isRequired,
 };
 
 export const defaultProps = {};

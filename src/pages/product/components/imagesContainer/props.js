@@ -1,9 +1,14 @@
-import PropTypes from 'prop-types';
+import { bool, string, array } from 'prop-types';
 
 export const propTypes = {
-  featured: PropTypes.bool.isRequired,
-  img: PropTypes.string.isRequired,
-  productImages: PropTypes.array.isRequired,
+  // boolean to show if ad is featured
+  featured: bool.isRequired,
+
+  // main image url for product
+  img: string.isRequired,
+
+  // array of all images urls for product
+  productImages: array.isRequired,
 };
 
 export const defaultProps = {};

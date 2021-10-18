@@ -1,7 +1,8 @@
-import PropTypes from 'prop-types';
+import { array } from 'prop-types';
 
 export const propTypes = {
-  posts: PropTypes.array.isRequired,
+  // array of posts to show in carousel
+  posts: array.isRequired,
 };
 
 export const defaultProps = {};

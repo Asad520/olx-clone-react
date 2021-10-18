@@ -1,7 +1,8 @@
-import PropTypes from 'prop-types';
+import { array } from 'prop-types';
 
 export const propTypes = {
-  popularSearches: PropTypes.array.isRequired,
+  // array of popular search items
+  popularSearches: array.isRequired,
 };
 
 export const defaultProps = {};

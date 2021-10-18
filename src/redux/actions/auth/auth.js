@@ -20,20 +20,16 @@ export const login = (provider) => {
   };
 };
 
-const logoutSuccess = () => {
-  return {
-    type: TYPES.LOGOUT,
-    payload: '',
-  };
-};
-
 export const logout = () => {
   return async (dispatch) => {
     try {
       const response = await signOutUser();
       if (response) {
         console.log('action success logout!');
-        dispatch(logoutSuccess());
+        dispatch({
+          type: TYPES.LOGOUT,
+          payload: '',
+        });
       } else {
         console.log('Error logging out user');
       }

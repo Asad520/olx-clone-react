@@ -1,17 +1,10 @@
 import { Container, Row } from 'react-bootstrap';
 import './style.css';
 import { propTypes, defaultProps } from './props';
+import useBreadcrumbs from './controller';
 
 export default function Breadcrumbs({ breadcrumbs }) {
-  const renderBreadcrumbs = () => {
-    return breadcrumbs.map((breadcrumb) => {
-      return (
-        <li className='breadcrumb-item' key={breadcrumb.id}>
-          <span>{breadcrumb.name}</span>
-        </li>
-      );
-    });
-  };
+  const [renderBreadcrumbs] = useBreadcrumbs(breadcrumbs);
 
   return (
     <section className='breadcrumbs'>
