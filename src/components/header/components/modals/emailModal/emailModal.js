@@ -4,8 +4,9 @@ import '../style.css';
 import useEmailModal from './controller';
 import { propTypes, defaultProps } from './props';
 
-export function EmailModal({ show, handleClose, openPasswordModal }) {
-  const [email, setEmail] = useEmailModal();
+export function EmailModal(props) {
+  const { email, setEmail, show, handleClose, openPasswordModal } =
+    useEmailModal(props);
 
   return (
     <Modal show={show} onHide={handleClose}>

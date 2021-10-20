@@ -4,8 +4,8 @@ import useItemSearch from './controller';
 import { propTypes, defaultProps } from './props';
 import { SEARCH_SVG } from '../../../../utils/constants';
 
-export function ItemSearch() {
-  const [itemSearch, setItemSearch, redirectToSearch] = useItemSearch();
+export function ItemSearch(props) {
+  const { itemSearch, setItemSearch, redirectToSearch } = useItemSearch(props);
 
   return (
     <Col className='search-container ms-lg-1 ms-0 my-lg-0 my-2 ' col={'true'}>

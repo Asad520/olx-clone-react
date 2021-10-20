@@ -2,8 +2,11 @@ import './style.css';
 import { defaultProps, propTypes } from './props';
 import { BANNER_IMG } from '../../../../utils/constants';
 import { Container } from 'react-bootstrap';
+import useBanner from './controller';
 
-export function Banner() {
+export function Banner(props) {
+  useBanner(props);
+
   return (
     <section className='banner-img'>
       <img src={BANNER_IMG} alt='OLX Banner' className='banner' />

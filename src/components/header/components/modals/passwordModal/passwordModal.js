@@ -4,9 +4,15 @@ import '../style.css';
 import usePasswordModal from './controller';
 import { propTypes, defaultProps } from './props';
 
-export function PasswordModal({ show, handleClose }) {
-  const [password, setPassword, confirmPassword, setConfirmPassword] =
-    usePasswordModal();
+export function PasswordModal(props) {
+  const {
+    show,
+    handleClose,
+    password,
+    setPassword,
+    confirmPassword,
+    setConfirmPassword,
+  } = usePasswordModal(props);
 
   return (
     <Modal show={show} onHide={handleClose}>

@@ -1,15 +1,11 @@
-import { useEffect } from 'react';
 import { CategoriesBar } from '../../components/categoriesBar';
 import { Banner } from './components/banner';
 import { BottomBanner } from './components/bottomBanner';
 import { Main } from './components/main';
-import { HOME_TITLE } from '../../utils/constants';
+import useHome from './controller';
 
-export function Home() {
-  useEffect(() => {
-    document.title = HOME_TITLE;
-  }, []);
-
+export function Home(props) {
+  useHome(props);
   return (
     <>
       <CategoriesBar shadow />

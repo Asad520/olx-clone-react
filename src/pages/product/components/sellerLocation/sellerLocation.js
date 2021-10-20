@@ -1,8 +1,10 @@
 import './style.css';
 import { propTypes, defaultProps } from './props';
 import { RIGHT_ARROW } from '../../../../utils/constants';
+import useSellerLocation from './controller';
 
-export function SellerLocation({ location, id }) {
+export function SellerLocation(props) {
+  const { location, id } = useSellerLocation(props);
   return (
     <>
       <div className='product-info-container mt-5'>

@@ -5,7 +5,7 @@ import {
   FILTER_LOCATIONS,
 } from '../../../../utils/data';
 
-export default function useSearchFilters() {
+export default function useSearchFilters(props) {
   const [viewMoreLocations, setViewMoreLocations] = useState(true);
   const [viewMoreCompanies, setViewMoreCompanies] = useState(true);
   const [minRange, setMinRange] = useState(250);
@@ -46,7 +46,8 @@ export default function useSearchFilters() {
       </li>
     ));
 
-  return [
+  return {
+    ...props,
     viewMoreLocations,
     setViewMoreLocations,
     viewMoreCompanies,
@@ -61,5 +62,5 @@ export default function useSearchFilters() {
     filterExtraCompanies,
     renderCategories,
     renderSubcategories,
-  ];
+  };
 }

@@ -5,8 +5,10 @@ import {
   MEMBER_ARROW,
   PHONE_ICON,
 } from '../../../../utils/constants';
+import useSellerDescription from './controller';
 
-export function SellerDescription({ name, memberSince }) {
+export function SellerDescription(props) {
+  const { name, memberSince } = useSellerDescription(props);
   return (
     <>
       <div className='product-info-container mt-2'>

@@ -7,8 +7,11 @@ import {
   BIG_VIEW_ICON,
   SELECTED_ITEM,
 } from '../../../../utils/constants';
+import useSortBar from './controller';
 
-export function SortBar() {
+export function SortBar(props) {
+  useSortBar(props);
+
   return (
     <>
       <section className='sort-bar'>

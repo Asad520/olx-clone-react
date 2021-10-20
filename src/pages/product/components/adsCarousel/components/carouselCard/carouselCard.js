@@ -2,10 +2,12 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import { propTypes, defaultProps } from './props';
 import { FAVOURITES_ICON } from '../../../../../../utils/constants';
+import useCarouselCard from './controller';
 
-export function CarouselCard({ price, descr, location, timeStamp, img, id }) {
-  const locationText =
-    location.length > 12 ? location.slice(0, 12) + '...' : location;
+export function CarouselCard(props) {
+  const { price, descr, locationText, timeStamp, img, id } =
+    useCarouselCard(props);
+
   return (
     <Link to={`/product/${id}`} className='carousel-card'>
       <div className='carousel-card-container'>

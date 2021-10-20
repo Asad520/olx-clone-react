@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useHistory } from 'react-router';
 
-export default function useItemSearch() {
+export default function useItemSearch(props) {
   const [itemSearch, setItemSearch] = useState('');
   const history = useHistory();
 
@@ -13,5 +13,5 @@ export default function useItemSearch() {
     }
   };
 
-  return [itemSearch, setItemSearch, redirectToSearch];
+  return { ...props, itemSearch, setItemSearch, redirectToSearch };
 }

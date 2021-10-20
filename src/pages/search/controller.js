@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router';
 import { SearchItemCard } from './components/searchItemCard';
 
-export default function useSearch() {
+export default function useSearch(props) {
   const { query } = useParams();
 
   useEffect(() => {
@@ -26,5 +26,5 @@ export default function useSearch() {
       );
     });
 
-  return [query, renderProducts];
+  return { ...props, query, renderProducts };
 }

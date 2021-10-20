@@ -1,7 +1,7 @@
 import { MAIN_CATEGORY } from '../../utils/constants';
 import { ALL_CATEGORIES, MAIN_CATEGORIES } from '../../utils/data';
 
-export default function useCategoriesBar() {
+export default function useCategoriesBar(props) {
   const renderCategories = (type) => {
     const categories =
       type === MAIN_CATEGORY ? MAIN_CATEGORIES : ALL_CATEGORIES;
@@ -14,5 +14,5 @@ export default function useCategoriesBar() {
     ));
   };
 
-  return [renderCategories];
+  return { ...props, renderCategories };
 }

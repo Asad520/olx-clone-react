@@ -7,8 +7,9 @@ import { SortBar } from './components/sortBar';
 import { POPULAR_SEARCHES, SEARCH_BREADCRUMBS, POSTS } from '../../utils/data';
 import useSearch from './controller';
 
-export function Search() {
-  const [query, renderProducts] = useSearch();
+export function Search(props) {
+  const { query, renderProducts } = useSearch(props);
+
   return (
     <>
       <CategoriesBar />

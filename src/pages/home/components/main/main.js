@@ -1,8 +1,9 @@
 import { Container, Row } from 'react-bootstrap';
 import { POSTS } from '../../../../utils/data';
-import { renderCards } from './controller';
+import useMain from './controller';
 
-export function Main() {
+export function Main(props) {
+  const { renderCards } = useMain(props);
   return (
     <section className='posts'>
       <Container>

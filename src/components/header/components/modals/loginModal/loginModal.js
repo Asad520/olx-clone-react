@@ -12,8 +12,8 @@ import { googleProvider } from '../../../../../utils/services/authProviders';
 import { login } from '../../../../../redux/actions/auth/auth';
 import useLoginModal from './constroller';
 
-export function LoginModal({ show, handleClose, openEmailModal }) {
-  const [, dispatch] = useLoginModal(handleClose);
+export function LoginModal(props) {
+  const { show, handleClose, openEmailModal, dispatch } = useLoginModal(props);
 
   return (
     <Modal show={show} onHide={handleClose}>

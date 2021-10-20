@@ -5,8 +5,11 @@ import {
   APPSTORE_ICON,
   PLAYSTORE_ICON,
 } from '../../../../utils/constants';
+import useBottomBanner from './controller';
 
-export function BottomBanner() {
+export function BottomBanner(props) {
+  useBottomBanner(props);
+
   return (
     <section className='bottom-banner'>
       <div>

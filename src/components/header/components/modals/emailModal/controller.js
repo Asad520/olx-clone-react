@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-export default function useEmailModal() {
+export default function useEmailModal(props) {
   const [email, setEmail] = useState('');
 
-  return [email, setEmail];
+  return { ...props, email, setEmail };
 }

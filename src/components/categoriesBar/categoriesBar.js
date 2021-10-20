@@ -5,8 +5,8 @@ import { CategoriesContainer, CategoriesSection } from './styled-components';
 import { MAIN_CATEGORY, DOWN_ARROW } from '../../utils/constants';
 import useCategoriesBar from './controller';
 
-export function CategoriesBar({ shadow }) {
-  const [renderCategories] = useCategoriesBar();
+export function CategoriesBar(props) {
+  const { renderCategories, shadow } = useCategoriesBar(props);
 
   return (
     <CategoriesSection shadow={shadow}>

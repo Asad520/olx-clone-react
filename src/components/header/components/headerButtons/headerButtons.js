@@ -9,8 +9,8 @@ import { LoginButton } from './components/loginButton';
 import { SellButton } from './components/sellButton';
 import useHeaderButtons from './controller';
 
-export function HeaderButtons() {
-  const [
+export function HeaderButtons(props) {
+  const {
     user,
     loginModal,
     setLoginModal,
@@ -18,7 +18,7 @@ export function HeaderButtons() {
     setEmailModal,
     passwordModal,
     setPasswordModal,
-  ] = useHeaderButtons();
+  } = useHeaderButtons(props);
 
   return (
     <>

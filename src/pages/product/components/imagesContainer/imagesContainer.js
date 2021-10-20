@@ -1,9 +1,11 @@
 import './style.css';
 import { LEFT_ARROW, RIGHT_ARROW } from '../../../../utils/constants';
 import { propTypes, defaultProps } from './props';
-import { renderImages } from './controller';
+import useImagesContainer from './controller';
 
-export function ImagesContainer({ productImages, featured, img }) {
+export function ImagesContainer(props) {
+  const { productImages, featured, img, renderImages } =
+    useImagesContainer(props);
   return (
     <div className='images-container'>
       <div className='main-img'>

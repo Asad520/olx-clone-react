@@ -1,8 +1,11 @@
 import './style.css';
 import { FAVOURITES_ICON, SHARE_ICON } from '../../../../utils/constants';
 import { propTypes, defaultProps } from './props';
+import usePriceContainer from './controller';
 
-export function PriceContainer({ price, descr, location, timeStamp }) {
+export function PriceContainer(props) {
+  const { price, descr, location, timeStamp } = usePriceContainer(props);
+
   return (
     <div className='product-info-container'>
       <div className='product-price-container'>

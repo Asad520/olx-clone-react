@@ -1,4 +1,4 @@
-export default function useFooter() {
+export default function useFooter(props) {
   const renderFooterCategories = (categories) =>
     categories.map((category) => (
       <div key={category.id} className='footer-category'>
@@ -6,5 +6,5 @@ export default function useFooter() {
       </div>
     ));
 
-  return [renderFooterCategories];
+  return { ...props, renderFooterCategories };
 }

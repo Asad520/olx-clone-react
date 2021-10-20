@@ -1,6 +1,9 @@
+import useLoginButton from './controller';
 import { propTypes, defaultProps } from './props';
 
-export function LoginButton({ setLoginModal }) {
+export function LoginButton(props) {
+  const { setLoginModal } = useLoginButton(props);
+
   return (
     <section className='login'>
       <button

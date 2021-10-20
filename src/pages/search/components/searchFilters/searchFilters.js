@@ -1,8 +1,8 @@
 import useSearchFilters from './controller';
 import './style.css';
 
-export function SearchFilters() {
-  const [
+export function SearchFilters(props) {
+  const {
     viewMoreLocations,
     setViewMoreLocations,
     viewMoreCompanies,
@@ -17,7 +17,7 @@ export function SearchFilters() {
     filterExtraCompanies,
     renderCategories,
     renderSubcategories,
-  ] = useSearchFilters();
+  } = useSearchFilters(props);
 
   return (
     <>

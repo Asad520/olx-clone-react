@@ -1,14 +1,13 @@
 import { propTypes, defaultProps } from './props';
 import { DOWN_ARROW, CURRENT_LOCATION_ICON } from '../../../../utils/constants';
 import { Col } from 'react-bootstrap';
-import { SEARCH_LOCATIONS } from '../../../../utils/data';
+
 import './style.css';
 import { SearchIcon } from './components';
 import useLocationSearch from './controller';
 
-export function LocationSearch() {
-  const [location, setLocation, renderLocations] =
-    useLocationSearch(SEARCH_LOCATIONS);
+export function LocationSearch(props) {
+  const { location, setLocation, renderLocations } = useLocationSearch(props);
 
   return (
     <Col className='dropdown' lg={3} md={12}>

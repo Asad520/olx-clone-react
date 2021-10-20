@@ -1,4 +1,5 @@
-export default function useBreadcrumbs(breadcrumbs) {
+export default function useBreadcrumbs(props) {
+  const { breadcrumbs } = props;
   const renderBreadcrumbs = () =>
     breadcrumbs.map((breadcrumb) => (
       <li className='breadcrumb-item' key={breadcrumb.id}>
@@ -6,5 +7,5 @@ export default function useBreadcrumbs(breadcrumbs) {
       </li>
     ));
 
-  return [renderBreadcrumbs];
+  return { ...props, renderBreadcrumbs };
 }

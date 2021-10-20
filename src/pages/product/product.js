@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import { useParams } from 'react-router';
 import { Col, Container, Row } from 'react-bootstrap';
 import { CategoriesBar } from '../../components/categoriesBar';
 import { Breadcrumbs } from '../../components/breadcrumbs';
@@ -10,15 +8,9 @@ import { ProductDetails } from './components/productDetails';
 import { SellerLocation } from './components/sellerLocation';
 import { AdsCarousel } from './components/adsCarousel';
 import { PRODUCT_BREADCRUMBS, POSTS } from '../../utils/data';
+import useProduct from './controller';
 
-export function Product() {
-  const { productId } = useParams();
-  const product = POSTS.find((post) => post.id === productId);
-
-  useEffect(() => {
-    document.title = product.descr;
-  }, [product.descr]);
-
+export function Product(props) {
   const {
     seller,
     productImages,
@@ -30,7 +22,7 @@ export function Product() {
     location,
     timeStamp,
     id,
-  } = product;
+  } = useProduct(props);
 
   return (
     <>

@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { LOCATION_MARKER_ICON } from '../../../../utils/constants';
+import { SEARCH_LOCATIONS } from '../../../../utils/data';
 
-export default function useLocationSearch(searchLocations) {
+export default function useLocationSearch(props) {
   const [location, setLocation] = useState('Pakistan');
 
   const renderLocations = () =>
-    searchLocations.map((location) => (
+    SEARCH_LOCATIONS.map((location) => (
       <li key={location.id}>
         <div className='location-item'>
           <img src={LOCATION_MARKER_ICON} alt='Current location icon' />
@@ -14,5 +15,5 @@ export default function useLocationSearch(searchLocations) {
       </li>
     ));
 
-  return [location, setLocation, renderLocations];
+  return { ...props, location, setLocation, renderLocations };
 }

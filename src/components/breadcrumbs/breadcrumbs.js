@@ -3,8 +3,8 @@ import './style.css';
 import { propTypes, defaultProps } from './props';
 import useBreadcrumbs from './controller';
 
-export function Breadcrumbs({ breadcrumbs }) {
-  const [renderBreadcrumbs] = useBreadcrumbs(breadcrumbs);
+export function Breadcrumbs(props) {
+  const { renderBreadcrumbs } = useBreadcrumbs(props);
 
   return (
     <section className='breadcrumbs'>

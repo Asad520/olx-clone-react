@@ -2,16 +2,12 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import { propTypes, defaultProps } from './props';
 import { FAVOURITES_ICON } from '../../../../utils/constants';
+import useSearchItemCard from './controller';
 
-export function SearchItemCard({
-  descr,
-  location,
-  timeStamp,
-  price,
-  img,
-  featured,
-  id,
-}) {
+export function SearchItemCard(props) {
+  const { descr, location, timeStamp, price, img, featured, id } =
+    useSearchItemCard(props);
+
   return (
     <Link to={`/product/${id}`} className='list-card'>
       <div className='list-img-container'>

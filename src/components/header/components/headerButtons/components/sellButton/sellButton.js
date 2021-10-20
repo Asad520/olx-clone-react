@@ -1,7 +1,10 @@
 import SELL_IMAGE from '../../../../../../assets/images/sell.png';
+import useSellButton from './controller';
 import { propTypes, defaultProps } from './props';
 
-export function SellButton() {
+export function SellButton(props) {
+  useSellButton(props);
+
   return (
     <section className='sell-btn'>
       <div>

@@ -1,9 +1,11 @@
 import { CarouselCard } from './components/carouselCard';
 import './style.css';
 import { propTypes, defaultProps } from './props';
-import { renderCarouselItems } from './controller';
+import useAdsCarousel from './controller';
 
-export function AdsCarousel({ posts }) {
+export function AdsCarousel(props) {
+  const { renderCarouselItems, posts } = useAdsCarousel(props);
+
   return (
     <>
       <div className='product-details-container'>

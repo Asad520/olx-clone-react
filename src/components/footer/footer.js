@@ -17,8 +17,9 @@ import {
 import { Col } from 'react-bootstrap';
 import useFooter from './controller';
 
-export function Footer() {
-  const [renderFooterCategories] = useFooter();
+export function Footer(props) {
+  const { renderFooterCategories } = useFooter(props);
+
   return (
     <footer>
       <section className='footer-section'>

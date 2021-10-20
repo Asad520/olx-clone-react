@@ -1,8 +1,14 @@
 import { useState } from 'react';
 
-export default function usePasswordModal() {
+export default function usePasswordModal(props) {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  return [password, setPassword, confirmPassword, setConfirmPassword];
+  return {
+    ...props,
+    password,
+    setPassword,
+    confirmPassword,
+    setConfirmPassword,
+  };
 }

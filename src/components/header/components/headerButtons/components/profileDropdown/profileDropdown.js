@@ -1,4 +1,3 @@
-import { useDispatch } from 'react-redux';
 import { defaultProps, propTypes } from './props';
 import { logout } from '../../../../../../redux/actions/auth/auth';
 import {
@@ -14,9 +13,10 @@ import {
   SETTINGS_ICON,
 } from '../../../../../../utils/constants';
 import { DropdownContainer } from '../../styledComponents';
+import useProfileDropdown from './controller';
 
-export function ProfileDropdown({ user }) {
-  const dispatch = useDispatch();
+export function ProfileDropdown(props) {
+  const { dispatch, user } = useProfileDropdown(props);
 
   return (
     <section className='login'>

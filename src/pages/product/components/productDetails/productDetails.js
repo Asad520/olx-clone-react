@@ -1,7 +1,10 @@
 import './style.css';
 import { propTypes, defaultProps } from './props';
+import useProductDetails from './controller';
 
-export function ProductDetails({ price, type, descr }) {
+export function ProductDetails(props) {
+  const { price, type, descr } = useProductDetails(props);
+
   return (
     <>
       <div className='product-details-container'>

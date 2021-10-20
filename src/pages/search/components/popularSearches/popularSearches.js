@@ -1,8 +1,10 @@
 import './style.css';
 import { propTypes, defaultProps } from './props';
-import { renderPopularSearches } from './controller';
+import usePopularSearches from './controller';
 
-export function PopularSearches({ popularSearches }) {
+export function PopularSearches(props) {
+  const { popularSearches, renderPopularSearches } = usePopularSearches(props);
+
   return (
     <>
       <section className='popular-searches'>
