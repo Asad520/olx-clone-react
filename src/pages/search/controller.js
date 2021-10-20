@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router';
-import SearchItemCard from './components/searchItemCard/searchItemCard';
+import { SearchItemCard } from './components/searchItemCard';
 
 export default function useSearch() {
   const { query } = useParams();

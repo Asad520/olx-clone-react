@@ -3,10 +3,10 @@ import { DOWN_ARROW, CURRENT_LOCATION_ICON } from '../../../../utils/constants';
 import { Col } from 'react-bootstrap';
 import { SEARCH_LOCATIONS } from '../../../../utils/data';
 import './style.css';
-import SearchIcon from './components/searchIcon';
+import { SearchIcon } from './components';
 import useLocationSearch from './controller';
 
-export default function LocationSearch() {
+export function LocationSearch() {
   const [location, setLocation, renderLocations] =
     useLocationSearch(SEARCH_LOCATIONS);
 

@@ -15,7 +15,7 @@ import {
 } from '../../../../../../utils/constants';
 import { DropdownContainer } from '../../styledComponents';
 
-export default function ProfileDropdown({ user }) {
+export function ProfileDropdown({ user }) {
   const dispatch = useDispatch();
 
   return (

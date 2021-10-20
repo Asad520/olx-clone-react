@@ -1,4 +1,4 @@
-import CarouselCard from './components/carouselCard/carouselCard';
+import { CarouselCard } from './components/carouselCard';
 
 const renderCarouselItems = (posts) => {
   let carouselItems = [];

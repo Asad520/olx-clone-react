@@ -3,7 +3,7 @@ import './style.css';
 import { propTypes, defaultProps } from './props';
 import useBreadcrumbs from './controller';
 
-export default function Breadcrumbs({ breadcrumbs }) {
+export function Breadcrumbs({ breadcrumbs }) {
   const [renderBreadcrumbs] = useBreadcrumbs(breadcrumbs);
 
   return (

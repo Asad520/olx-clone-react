@@ -1,15 +1,15 @@
 import './style.css';
 import { defaultProps, propTypes } from './props';
 import { Col } from 'react-bootstrap';
-import LoginModal from '../modals/loginModal/loginModal';
-import EmailModal from '../modals/emailModal/emailModal';
-import PasswordModal from '../modals/passwordModal/passwordModal';
-import ProfileDropdown from './components/profileDropdown/profileDropdown';
-import LoginButton from './components/loginButton/loginButton';
-import SellButton from './components/sellButton/sellButton';
+import { LoginModal } from '../modals/loginModal';
+import { EmailModal } from '../modals/emailModal';
+import { PasswordModal } from '../modals/passwordModal';
+import { ProfileDropdown } from './components/profileDropdown';
+import { LoginButton } from './components/loginButton';
+import { SellButton } from './components/sellButton';
 import useHeaderButtons from './controller';
 
-export default function HeaderButtons() {
+export function HeaderButtons() {
   const [
     user,
     loginModal,

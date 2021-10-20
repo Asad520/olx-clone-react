@@ -2,7 +2,7 @@ import './style.css';
 import { FAVOURITES_ICON, SHARE_ICON } from '../../../../utils/constants';
 import { propTypes, defaultProps } from './props';
 
-export default function PriceContainer({ price, descr, location, timeStamp }) {
+export function PriceContainer({ price, descr, location, timeStamp }) {
   return (
     <div className='product-info-container'>
       <div className='product-price-container'>

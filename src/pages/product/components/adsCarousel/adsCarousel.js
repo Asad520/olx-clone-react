@@ -1,9 +1,9 @@
-import CarouselCard from './components/carouselCard/carouselCard';
+import { CarouselCard } from './components/carouselCard';
 import './style.css';
 import { propTypes, defaultProps } from './props';
 import { renderCarouselItems } from './controller';
 
-export default function AdsCarousel({ posts }) {
+export function AdsCarousel({ posts }) {
   return (
     <>
       <div className='product-details-container'>

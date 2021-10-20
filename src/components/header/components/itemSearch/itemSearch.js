@@ -4,7 +4,7 @@ import useItemSearch from './controller';
 import { propTypes, defaultProps } from './props';
 import { SEARCH_SVG } from '../../../../utils/constants';
 
-export default function ItemSearch() {
+export function ItemSearch() {
   const [itemSearch, setItemSearch, redirectToSearch] = useItemSearch();
 
   return (

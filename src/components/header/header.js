@@ -1,10 +1,10 @@
 import { Navbar, Container } from 'react-bootstrap';
-import Brand from './components/brand/brand';
-import LocationSearch from './components/locationSearch/locationSearch';
-import ItemSearch from './components/itemSearch/itemSearch';
-import HeaderButtons from './components/headerButtons/headerButtons';
+import { Brand } from './components/brand';
+import { LocationSearch } from './components/locationSearch';
+import { ItemSearch } from './components/itemSearch';
+import { HeaderButtons } from './components/headerButtons';
 
-export default function Header() {
+export function Header() {
   return (
     <Navbar bg='light' expand='lg' fixed='top'>
       <Container>

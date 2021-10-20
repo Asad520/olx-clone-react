@@ -3,7 +3,7 @@ import './style.css';
 import { propTypes, defaultProps } from './props';
 import { FAVOURITES_ICON } from '../../../../utils/constants';
 
-export default function SearchItemCard({
+export function SearchItemCard({
   descr,
   location,
   timeStamp,

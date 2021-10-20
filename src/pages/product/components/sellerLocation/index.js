@@ -1,0 +1,1 @@
+export { SellerLocation } from './sellerLocation';

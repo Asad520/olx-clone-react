@@ -3,14 +3,7 @@ import './style.css';
 import { propTypes, defaultProps } from './props';
 import { FAVOURITES_ICON } from '../../../../../../utils/constants';
 
-export default function CarouselCard({
-  price,
-  descr,
-  location,
-  timeStamp,
-  img,
-  id,
-}) {
+export function CarouselCard({ price, descr, location, timeStamp, img, id }) {
   const locationText =
     location.length > 12 ? location.slice(0, 12) + '...' : location;
   return (

@@ -3,7 +3,7 @@ import { LEFT_ARROW, RIGHT_ARROW } from '../../../../utils/constants';
 import { propTypes, defaultProps } from './props';
 import { renderImages } from './controller';
 
-export default function ImagesContainer({ productImages, featured, img }) {
+export function ImagesContainer({ productImages, featured, img }) {
   return (
     <div className='images-container'>
       <div className='main-img'>

@@ -1,13 +1,13 @@
 import { Col, Container, Row } from 'react-bootstrap';
+import { CategoriesBar } from '../../components/categoriesBar';
+import { Breadcrumbs } from '../../components/breadcrumbs';
+import { PopularSearches } from './components/popularSearches';
+import { SearchFilters } from './components/searchFilters';
+import { SortBar } from './components/sortBar';
 import { POPULAR_SEARCHES, SEARCH_BREADCRUMBS, POSTS } from '../../utils/data';
-import CategoriesBar from '../../components/categoriesBar/categoriesBar';
-import Breadcrumbs from '../../components/breadcrumbs/breadcrumbs';
-import PopularSearches from './components/popularSearches/popularSearches';
-import SearchFilters from './components/searchFilters/searchFilters';
-import SortBar from './components/sortBar/sortBar';
 import useSearch from './controller';
 
-export default function Search() {
+export function Search() {
   const [query, renderProducts] = useSearch();
   return (
     <>

@@ -8,7 +8,7 @@ import {
   SELECTED_ITEM,
 } from '../../../../utils/constants';
 
-export default function SortBar() {
+export function SortBar() {
   return (
     <>
       <section className='sort-bar'>

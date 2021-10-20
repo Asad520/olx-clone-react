@@ -3,7 +3,7 @@ import { defaultProps, propTypes } from './props';
 import { BANNER_IMG } from '../../../../utils/constants';
 import { Container } from 'react-bootstrap';
 
-export default function Banner() {
+export function Banner() {
   return (
     <section className='banner-img'>
       <img src={BANNER_IMG} alt='OLX Banner' className='banner' />

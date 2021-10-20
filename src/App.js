@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Footer from './components/footer/footer';
-import Header from './components/header/header';
-import Home from './pages/home/home';
-import Product from './pages/product/product';
-import Search from './pages/search/search';
+import { Footer } from './components/footer';
+import { Header } from './components/header';
+import { Home } from './pages/home';
+import { Product } from './pages/product';
+import { Search } from './pages/search';
 import store from './redux/storeConfig';
 import initializeFirebase from './utils/services/firebaseConfig';
 

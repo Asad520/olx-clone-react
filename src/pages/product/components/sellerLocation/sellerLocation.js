@@ -2,7 +2,7 @@ import './style.css';
 import { propTypes, defaultProps } from './props';
 import { RIGHT_ARROW } from '../../../../utils/constants';
 
-export default function SellerLocation({ location, id }) {
+export function SellerLocation({ location, id }) {
   return (
     <>
       <div className='product-info-container mt-5'>

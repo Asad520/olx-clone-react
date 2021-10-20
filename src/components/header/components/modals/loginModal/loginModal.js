@@ -12,7 +12,7 @@ import { googleProvider } from '../../../../../utils/services/authProviders';
 import { login } from '../../../../../redux/actions/auth/auth';
 import useLoginModal from './constroller';
 
-export default function LoginModal({ show, handleClose, openEmailModal }) {
+export function LoginModal({ show, handleClose, openEmailModal }) {
   const [, dispatch] = useLoginModal(handleClose);
 
   return (

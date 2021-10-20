@@ -4,7 +4,7 @@ import '../style.css';
 import useEmailModal from './controller';
 import { propTypes, defaultProps } from './props';
 
-export default function EmailModal({ show, handleClose, openPasswordModal }) {
+export function EmailModal({ show, handleClose, openPasswordModal }) {
   const [email, setEmail] = useEmailModal();
 
   return (

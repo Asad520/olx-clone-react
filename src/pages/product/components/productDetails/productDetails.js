@@ -1,7 +1,7 @@
 import './style.css';
 import { propTypes, defaultProps } from './props';
 
-export default function ProductDetails({ price, type, descr }) {
+export function ProductDetails({ price, type, descr }) {
   return (
     <>
       <div className='product-details-container'>

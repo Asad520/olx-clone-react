@@ -1,7 +1,7 @@
 import useSearchFilters from './controller';
 import './style.css';
 
-export default function SearchFilters() {
+export function SearchFilters() {
   const [
     viewMoreLocations,
     setViewMoreLocations,

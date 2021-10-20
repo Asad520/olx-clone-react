@@ -1,0 +1,1 @@
+export { AdsCarousel } from './adsCarousel';

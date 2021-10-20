@@ -6,7 +6,7 @@ import {
   PHONE_ICON,
 } from '../../../../utils/constants';
 
-export default function SellerDescription({ name, memberSince }) {
+export function SellerDescription({ name, memberSince }) {
   return (
     <>
       <div className='product-info-container mt-2'>

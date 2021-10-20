@@ -1,6 +1,6 @@
 import { propTypes, defaultProps } from './props';
 
-export default function LoginButton({ setLoginModal }) {
+export function LoginButton({ setLoginModal }) {
   return (
     <section className='login'>
       <button

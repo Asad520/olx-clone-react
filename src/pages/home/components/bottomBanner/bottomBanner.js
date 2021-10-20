@@ -6,7 +6,7 @@ import {
   PLAYSTORE_ICON,
 } from '../../../../utils/constants';
 
-export default function BottomBanner() {
+export function BottomBanner() {
   return (
     <section className='bottom-banner'>
       <div>

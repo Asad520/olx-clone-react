@@ -2,7 +2,7 @@ import './style.css';
 import { propTypes, defaultProps } from './props';
 import { renderPopularSearches } from './controller';
 
-export default function PopularSearches({ popularSearches }) {
+export function PopularSearches({ popularSearches }) {
   return (
     <>
       <section className='popular-searches'>
